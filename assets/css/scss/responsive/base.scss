@@ -8,6 +8,15 @@
     display: block;
 }
 
+.curryBs_btn, .curryBs-bs-books li {
+    transition-duration: .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+}
+
 @mixin font-s-pc {
     font-size: 14px;
     line-height: 14px;

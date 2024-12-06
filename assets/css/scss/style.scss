@@ -13,15 +13,32 @@ html {
                 height: 100%;
                 position: relative;
 
+                .curryBs-fv-bookshelf {
+                    z-index: 1;
+                }
+
                 .curryBs-fv-curtain {
-                    width: 52.5%;
+                    width: 100%;
                     height: 100%;
                     @include absolute;
-    
+                    z-index: 2;
+                    animation: curryBs-fv-curtain 1s ease-in-out forwards;
+                
                     img {
                         height: 100%;
                     }
                 }
+
+                @keyframes curryBs-fv-curtain {
+
+                    from {
+                        transform: translateX(0);
+                    }
+
+                    to {
+                        transform: translateX(-47.5%);
+                    }
+                }    
     
                 .curryBs-fv-frame {
                     width: 100%;
@@ -29,19 +46,94 @@ html {
                     position: absolute;
                     bottom: 0;
                     left: 0;
-                    z-index: 1;
+                    opacity: 0;
+                    z-index: 3;
+                    animation: curryBs-fv-frame .5s 1.3s ease-in-out forwards;
     
                     img {
                         height: 100%;
                     }
                 }
+
+                @keyframes curryBs-fv-frame {
+
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }    
     
                 .curryBs-fv-spoon {
-                    width: 65%;
+                    width: 70%;
                     position: absolute;
                     bottom: 0;
                     right: 0;
-                    transform: translateY(-100px);
+                    transform: translateY(-30%);
+                    opacity: 0;
+                    z-index: 3;
+                    animation: curryBs-fv-spoon1 2s 1.3s ease-in-out forwards, curryBs-fv-spoon2 2.6s 3.3s infinite;
+                }
+
+                @keyframes curryBs-fv-spoon1 {
+
+                    0% {
+                        opacity: 0;
+                    }
+    
+                    25% {
+                        opacity: 1;
+                    }
+
+                    72% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    79% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    86% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    93% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    100% {
+                        transform: translateY(-30%) rotate(0);
+                        opacity: 1;
+                    }
+                } 
+                
+                @keyframes curryBs-fv-spoon2 {
+
+                    0% {
+                        transform: translateY(-30%) rotate(0)   
+                    }
+                    
+                    80% {
+                        transform: translateY(-30%) rotate(0)
+                    }
+
+                    85% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    90% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    95% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    100% {
+                        transform: translateY(-30%) rotate(0);
+                    }
                 }
     
                 .curryBs-fv-bg {
@@ -51,16 +143,44 @@ html {
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    opacity: 0;
+                    z-index: 2;
+                    animation: curryBs-fv-bg .5s 1.3s ease-in-out forwards;
+                }    
+
+                @keyframes curryBs-fv-bg {
+
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;                 
+                    }
                 }    
             }
 
             h1 {
-                @include font-m;
+                width: 37vw;
                 position: absolute;
                 top: 50%;
                 left: 25px;
                 transform: translateY(-100%);
+                opacity: 0;
+                z-index: 2;
+                animation: h1 .8s 1.7s ease-in-out forwards;
             }
+
+            @keyframes h1 {
+
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;                 
+                }
+            }    
         }
 
         .curryBs_main {
@@ -131,6 +251,10 @@ html {
                                 background-color: rgba(0, 0, 0, .2);
                                 @include absolute;
                                 z-index: -1;
+                            }
+
+                            &:active {
+                                opacity: .8;
                             }
                             
                             img {
@@ -349,6 +473,11 @@ html {
                     box-shadow: 0 4px 4px $black-a3;
                     margin: 32px auto 0 auto;
 
+                    &:active {
+                        box-shadow: 0 0 0 transparent;
+                        transform: translateY(4px);
+                    }
+
                     a {
                         padding: 21px 0;
                         @include center;
@@ -395,20 +524,38 @@ html {
         body {
     
             .curryBs-fv {
-                height: 720px;
+                height: 640px;
     
                 .curryBs-fv-images {
                     display: flex;
                     justify-content: end;
     
                     .curryBs-fv-bookshelf {
-                        width: fit-content;
+                        width: 50%;
                         height: 100%;
+                        object-fit: cover;
                     }
     
                     .curryBs-fv-curtain {
-                        width: 55%;
+                        width: 100%;
+                        display: flex;
+                        animation: curryBs-fv-curtain-pc 1s ease-in-out forwards;
+
+                        img {
+                            width: 50%;
+                        }
                     }
+
+                    @keyframes curryBs-fv-curtain-pc {
+
+                        from {
+                            transform: translateX(0);
+                        }
+    
+                        to {
+                            transform: translateX(-45%);
+                        }
+                    }            
 
                     .curryBs-fv-frame {
                         height: 200px;
@@ -420,8 +567,67 @@ html {
                         bottom: 0;
                         left: 50%;
                         transform: translate(-12.5%, -50px);
-                        z-index: 1;
+                        animation: curryBs-fv-spoon1-pc 2s 1.3s ease-in-out forwards, curryBs-fv-spoon2-pc 2.6s 3.3s infinite;
                     }
+
+                    @keyframes curryBs-fv-spoon1-pc {
+
+                        0% {
+                            opacity: 0;
+                        }
+        
+                        25% {
+                            opacity: 1;
+                        }
+    
+                        72% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        79% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        86% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        93% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        100% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                            opacity: 1;
+                        }
+                    } 
+                    
+                    @keyframes curryBs-fv-spoon2-pc {
+    
+                        0% {
+                            transform: translate(-12.5%, -50px) rotate(0)   
+                        }
+                        
+                        80% {
+                            transform: translate(-12.5%, -50px) rotate(0)
+                        }
+    
+                        85% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        90% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        95% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        100% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+                    }    
 
                     .curryBs-fv-bg {
                         height: 75px;
@@ -429,9 +635,9 @@ html {
                 }
 
                 h1 {
-                    @include font-l-pc;
-                    left: 200px;
-                    transform: translateY(-50%);
+                    width: 27vw;
+                    left: 160px;
+                    transform: translateY(-75%);
                 }
             }
 
@@ -513,16 +719,22 @@ html {
                 }
 
                 .curryBs-epilogue {
-                    padding: 175px 0;
+                    width: 80%;
+                    padding: 175px 75px;
+                    margin: 80px auto 0 auto;
 
                     p {
                         padding-left: 10px;
                         font-size: 20px;
                         line-height: 48px;
+                        position: relative;
+                        top: -16px;
                     }
 
                     .curryBs-cta_btn {
                         width: 540px;
+                        position: relative;
+                        top: -16px;
 
                         a {
                             @include font-m-pc;

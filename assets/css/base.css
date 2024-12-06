@@ -110,3 +110,18 @@ img {
     display: none;
   }
 }
+.curryBs-sp {
+  display: none;
+}
+
+.curryBs-pc {
+  display: block;
+}
+
+.curryBs_btn, .curryBs-bs-books li {
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.curryBs_btn:hover, .curryBs-bs-books li:hover {
+  transform: translateY(-8px);
+}

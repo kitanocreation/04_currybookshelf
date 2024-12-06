@@ -121,15 +121,28 @@ html body .curryBs-fv .curryBs-fv-images {
   height: 100%;
   position: relative;
 }
+html body .curryBs-fv .curryBs-fv-images .curryBs-fv-bookshelf {
+  z-index: 1;
+}
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-curtain {
-  width: 52.5%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
+  animation: curryBs-fv-curtain 1s ease-in-out forwards;
 }
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-curtain img {
   height: 100%;
+}
+@keyframes curryBs-fv-curtain {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-47.5%);
+  }
 }
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-frame {
   width: 100%;
@@ -137,17 +150,74 @@ html body .curryBs-fv .curryBs-fv-images .curryBs-fv-frame {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  opacity: 0;
+  z-index: 3;
+  animation: curryBs-fv-frame 0.5s 1.3s ease-in-out forwards;
 }
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-frame img {
   height: 100%;
 }
+@keyframes curryBs-fv-frame {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-spoon {
-  width: 65%;
+  width: 70%;
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translateY(-100px);
+  transform: translateY(-30%);
+  opacity: 0;
+  z-index: 3;
+  animation: curryBs-fv-spoon1 2s 1.3s ease-in-out forwards, curryBs-fv-spoon2 2.6s 3.3s infinite;
+}
+@keyframes curryBs-fv-spoon1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  72% {
+    transform: translateY(-30%) rotate(0);
+  }
+  79% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  86% {
+    transform: translateY(-30%) rotate(0);
+  }
+  93% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  100% {
+    transform: translateY(-30%) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes curryBs-fv-spoon2 {
+  0% {
+    transform: translateY(-30%) rotate(0);
+  }
+  80% {
+    transform: translateY(-30%) rotate(0);
+  }
+  85% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  90% {
+    transform: translateY(-30%) rotate(0);
+  }
+  95% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  100% {
+    transform: translateY(-30%) rotate(0);
+  }
 }
 html body .curryBs-fv .curryBs-fv-images .curryBs-fv-bg {
   width: 100%;
@@ -156,14 +226,35 @@ html body .curryBs-fv .curryBs-fv-images .curryBs-fv-bg {
   position: absolute;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  z-index: 2;
+  animation: curryBs-fv-bg 0.5s 1.3s ease-in-out forwards;
+}
+@keyframes curryBs-fv-bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 html body .curryBs-fv h1 {
-  font-size: 16px;
-  line-height: 16px;
+  width: 37vw;
   position: absolute;
   top: 50%;
   left: 25px;
   transform: translateY(-100%);
+  opacity: 0;
+  z-index: 2;
+  animation: h1 0.8s 1.7s ease-in-out forwards;
+}
+@keyframes h1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 html body .curryBs_main {
   margin-top: 80px;
@@ -239,6 +330,9 @@ html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn::after {
   top: 0;
   left: 0;
   z-index: -1;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn:active {
+  opacity: 0.8;
 }
 html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn img {
   height: 100%;
@@ -428,6 +522,10 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn {
   box-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
   margin: 32px auto 0 auto;
 }
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn:active {
+  box-shadow: 0 0 0 transparent;
+  transform: translateY(4px);
+}
 html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a {
   padding: 21px 0;
   display: flex;
@@ -554,19 +652,40 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
   .curryBs-pc {
     display: block;
   }
+  .curryBs_btn, .curryBs-bs-books li {
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .curryBs_btn:hover, .curryBs-bs-books li:hover {
+    transform: translateY(-8px);
+  }
   html body .curryBs-fv {
-    height: 720px;
+    height: 640px;
   }
   html body .curryBs-fv .curryBs-fv-images {
     display: flex;
     justify-content: end;
   }
   html body .curryBs-fv .curryBs-fv-images .curryBs-fv-bookshelf {
-    width: fit-content;
+    width: 50%;
     height: 100%;
+    object-fit: cover;
   }
   html body .curryBs-fv .curryBs-fv-images .curryBs-fv-curtain {
-    width: 55%;
+    width: 100%;
+    display: flex;
+    animation: curryBs-fv-curtain-pc 1s ease-in-out forwards;
+  }
+  html body .curryBs-fv .curryBs-fv-images .curryBs-fv-curtain img {
+    width: 50%;
+  }
+  @keyframes curryBs-fv-curtain-pc {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-45%);
+    }
   }
   html body .curryBs-fv .curryBs-fv-images .curryBs-fv-frame {
     height: 200px;
@@ -577,16 +696,59 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
     bottom: 0;
     left: 50%;
     transform: translate(-12.5%, -50px);
-    z-index: 1;
+    animation: curryBs-fv-spoon1-pc 2s 1.3s ease-in-out forwards, curryBs-fv-spoon2-pc 2.6s 3.3s infinite;
+  }
+  @keyframes curryBs-fv-spoon1-pc {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    72% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    79% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    86% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    93% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    100% {
+      transform: translate(-12.5%, -50px) rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes curryBs-fv-spoon2-pc {
+    0% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    80% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    85% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    90% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    95% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    100% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
   }
   html body .curryBs-fv .curryBs-fv-images .curryBs-fv-bg {
     height: 75px;
   }
   html body .curryBs-fv h1 {
-    font-size: 32px;
-    line-height: 32px;
-    left: 200px;
-    transform: translateY(-50%);
+    width: 27vw;
+    left: 160px;
+    transform: translateY(-75%);
   }
   html body .curryBs_main .curryBs-prologue {
     padding-left: 10px;
@@ -655,15 +817,21 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
     line-height: 32px;
   }
   html body .curryBs_main .curryBs-epilogue {
-    padding: 175px 0;
+    width: 80%;
+    padding: 175px 75px;
+    margin: 80px auto 0 auto;
   }
   html body .curryBs_main .curryBs-epilogue p {
     padding-left: 10px;
     font-size: 20px;
     line-height: 48px;
+    position: relative;
+    top: -16px;
   }
   html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn {
     width: 540px;
+    position: relative;
+    top: -16px;
   }
   html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a {
     font-size: 20px;
