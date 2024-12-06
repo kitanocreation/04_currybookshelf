@@ -1,0 +1,24 @@
+@import '../base';
+
+.curryBs-sp {
+    display: none;
+}
+
+.curryBs-pc {
+    display: block;
+}
+
+@mixin font-s-pc {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@mixin font-m-pc {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+@mixin font-l-pc {
+    font-size: 32px;
+    line-height: 32px;
+}
