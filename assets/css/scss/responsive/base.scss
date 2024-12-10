@@ -1,0 +1,33 @@
+@import '../base';
+
+.curryBs-sp {
+    display: none;
+}
+
+.curryBs-pc {
+    display: block;
+}
+
+.curryBs_btn, .curryBs-bs-books li {
+    transition-duration: .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+}
+
+@mixin font-s-pc {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@mixin font-m-pc {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+@mixin font-l-pc {
+    font-size: 32px;
+    line-height: 32px;
+}
