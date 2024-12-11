@@ -438,35 +438,35 @@ html {
             }
 
             .curryBs-bs-recommend {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg1.webp');
             }
 
             .curryBs-bs-famousStore {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg1.webp');
             }
 
             .curryBs-bs-hot {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg1.webp');
             }
 
             .curryBs-bs-easy {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg1.webp');
             }
 
             .curryBs-bs-brandedBeef {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg1.webp');
             }
 
             .curryBs-bs-hearty {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg1.webp');
             }
 
             .curryBs-bs-local {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg1.webp');
             }
 
             .curryBs-bs-originality {
-                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg.webp');
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg1.webp');
             }
 
             .curryBs-bs-bar {
@@ -479,7 +479,6 @@ html {
 
             .curryBs-epilogue {
                 padding: 150px 0;
-                margin-top: 80px;
                 position: relative;
                 z-index: 0;
 
@@ -742,6 +741,7 @@ html {
                 }
 
                 .curryBs-bs-recommend, .curryBs-bs-famousStore, .curryBs-bs-hot, .curryBs-bs-easy, .curryBs-bs-brandedBeef, .curryBs-bs-hearty, .curryBs-bs-local, .curryBs-bs-originality {
+                    overflow-x: hidden;
                     background-size: initial;
 
                     .curryBs-bs-title {
@@ -872,6 +872,25 @@ html {
                             }
                         }
 
+                        .curryBs-bs-slide-right {
+                            transform: translateX(-100vw);
+                        }
+
+                        .curryBs-bs-bgBooks {
+                            width: 70vw;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .curryBs-bs-recommend, .curryBs-bs-famousStore {
+
+                    .curryBs-bs-translateX {
+
                         article:nth-of-type(2) {
 
                             .curryBs-bs-books {
@@ -886,18 +905,135 @@ html {
                                 transform: translateY(-35px);
                             }
                         }
+                    }
+                }
 
-                        .curryBs-bs-slide-right {
-                            transform: translateX(-100vw);
+                .curryBs-bs-hot {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(2.5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-2.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-22.5px);
+                            }
                         }
+                    }
+                }
 
-                        .curryBs-bs-bgBooks {
-                            width: 70vw;
-                            position: absolute;
-                            bottom: 0;
-                            left: 50%;
-                            transform: translateX(-50%);
-                            z-index: -1;
+                .curryBs-bs-easy {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(10px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-15px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-brandedBeef {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(2.5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-2.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-22.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-hearty {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(-20px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-25px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-42.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-local {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(0);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-originality {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(-2.5px);
+
+                                li:nth-of-type(3) {
+                                    transform: translateY(10px);
+                                }
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-7.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-27.5px);
+                            }
                         }
                     }
                 }

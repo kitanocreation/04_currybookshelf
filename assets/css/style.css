@@ -488,28 +488,28 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth
   margin-bottom: 60px;
 }
 html body .curryBs_main .curryBs-bs-recommend {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-famousStore {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-hot {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-easy {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-brandedBeef {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-hearty {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-local {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-originality {
-  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg.webp");
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg1.webp");
 }
 html body .curryBs_main .curryBs-bs-bar {
   width: 100%;
@@ -520,7 +520,6 @@ html body .curryBs_main .curryBs-bs-bar {
 }
 html body .curryBs_main .curryBs-epilogue {
   padding: 150px 0;
-  margin-top: 80px;
   position: relative;
   z-index: 0;
 }
@@ -833,6 +832,7 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
     margin-left: 16px;
   }
   html body .curryBs_main .curryBs-bs-recommend, html body .curryBs_main .curryBs-bs-famousStore, html body .curryBs_main .curryBs-bs-hot, html body .curryBs_main .curryBs-bs-easy, html body .curryBs_main .curryBs-bs-brandedBeef, html body .curryBs_main .curryBs-bs-hearty, html body .curryBs_main .curryBs-bs-local, html body .curryBs_main .curryBs-bs-originality {
+    overflow-x: hidden;
     background-size: initial;
   }
   html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title {
@@ -933,15 +933,6 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
   html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6) {
     transform: translateX(36px);
   }
-  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
-    transform: translateY(-10px);
-  }
-  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
-    transform: translateY(-15px);
-  }
-  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
-    transform: translateY(-35px);
-  }
   html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-slide-right {
     transform: translateX(-100vw);
   }
@@ -952,6 +943,72 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-ic
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-10px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-15px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-35px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-22.5px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(10px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(5px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-15px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-22.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-25px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-42.5px);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(5px);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(0);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books li:nth-of-type(3) {
+    transform: translateY(10px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-7.5px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-27.5px);
   }
   html body .curryBs_main .curryBs-epilogue {
     width: 80%;
