@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>カレーなる本棚&reg;｜北野エースWEB SHOP</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <style>
+            .curryBs-pc {
+                display: none;
+            }
+            .curryBs_header {
+                width: 100vw;
+                height: 97.5px;
+                background-color: #FFFFFF;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+            .curryBs_header-bg {
+                width: 100vw;
+                height: 97.5px;
+            }
+            .curryBs_footer {
+                width: 100vw;
+                height: calc(100vh - 97.5px);
+                background-color: #E6E6E6;
+            }
+            @media screen and (min-width: 768px) {
+                .curryBs_header {
+                    height: 147.5px;
+                }
+                .curryBs_header-bg {
+                    height: 147.5px;
+                }
+                .curryBs_footer {
+                    height: calc(100vh - 147.5px);
+                }
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+        <script src="./assets/js/script.js" defer></script>    
+    </head>
+    <body class="curryBs_body-notSession">
+
+        <div class="curryBs-loading curryBs-loading-notSession">
+            <ul>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-book.webp" alt="本がカレーに変わる様子"></li>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-book.webp" alt="本がカレーに変わる様子"></li>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-book.webp" alt="本がカレーに変わる様子"></li>
+            </ul>
+            <ul>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-curry.webp" alt="本がカレーに変わる様子"></li>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-curry.webp" alt="本がカレーに変わる様子"></li>
+                <li><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/loading-curry.webp" alt="本がカレーに変わる様子"></li>
+            </ul>
+            <p>loading...</p>
+        </div>
+        <div class="curryBs_header">Header</div>
+        <div class="curryBs_header-bg"></div>
+        <div class="curryBs-fv curryBs-fv-notSession">
+            <div class="curryBs-fv-images">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-bookshelf.webp" alt="本棚の画像" class="curryBs-fv-bookshelf curryBs-sp">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-bookshelf2.webp" alt="本棚の画像" class="curryBs-fv-bookshelf curryBs-pc">
+                <div class="curryBs-fv-curtain curryBs-sp"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-curtain.webp" alt="カーテンが左に向かって開く様子"></div>
+                <div class="curryBs-fv-curtain curryBs-pc">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-curtain.webp" alt="カーテンが左に向かって開く様子">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-curtain.webp" alt="">
+                </div>
+                <div class="curryBs-fv-frame"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-frame.webp" alt=""></div>
+                <div class="curryBs-fv-spoon">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-spoon4.webp" alt="下へのスクロールを促すように動くスプーン" class="curryBs-sp">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-spoon1.webp" alt="下へのスクロールを促すように動くスプーン" class="curryBs-pc">
+                </div>
+                <div class="curryBs-fv-bg"></div>    
+            </div>
+            <h1><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/logo.webp" alt="カレーなる本棚&reg;"></h1>
+        </div>
+        <div class="curryBs-fv curryBs-fv-session">
+            <div class="curryBs-fv-images">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-bookshelf.webp" alt="本棚の画像" class="curryBs-fv-bookshelf curryBs-sp">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-bookshelf2.webp" alt="本棚の画像" class="curryBs-fv-bookshelf curryBs-pc">
+                <div class="curryBs-fv-curtain curryBs-sp"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-curtain.webp" alt="カーテンが左に向かって開く様子"></div>
+                <div class="curryBs-fv-curtain curryBs-pc">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-curtain.webp" alt="カーテンが左に向かって開く様子">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-curtain.webp" alt="">
+                </div>
+                <div class="curryBs-fv-frame"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-frame.webp" alt=""></div>
+                <div class="curryBs-fv-spoon-session">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/fv-spoon4.webp" alt="下へのスクロールを促すように動くスプーン" class="curryBs-sp">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/fv-spoon1.webp" alt="下へのスクロールを促すように動くスプーン" class="curryBs-pc">
+                </div>
+                <div class="curryBs-fv-bg"></div>    
+            </div>
+            <h1><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/logo.webp" alt="カレーなる本棚&reg;"></h1>
+        </div>
+        <main class="curryBs_main">
+            <p class="curryBs-prologue curryBs-sp">
+                <span>まるで本を選ぶように、</span>
+                新しい味を想像しながら<br>
+                <span>カレー選びを楽しんでいただきたい。</span>
+                北野エースWEB SHOPだけの色鮮やかな<br>
+                <span>カレーなる本棚®︎で、</span>
+                新しいカレーとの素敵な出会いが<br>
+                <span>ありますように…！</span>
+            </p>
+            <p class="curryBs-prologue curryBs-pc">
+                まるで本を選ぶように、<br>
+                新しい味を想像しながらカレー選びを楽しんでいただきたい。<br>
+                北野エースWEB SHOPだけの色鮮やかなカレーなる本棚®︎で、<br>
+                新しいカレーとの素敵な出会いがありますように…！
+            </p>
+            <nav class="curryBs-categoryMenu">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/categoryMenu-book1.webp" alt="大きい本の画像" class="curryBs-categoryMenu-bg curryBs-sp">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/categoryMenu-book.webp" alt="大きい本の画像" class="curryBs-categoryMenu-bg curryBs-pc">
+                <h2>カテゴリから選ぶ</h2>
+                <ul>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend_btn-bg.webp" alt="">おすすめカレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore_btn-bg.webp" alt="">有名店カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot_btn-bg.webp" alt="">辛口カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy_btn-bg.webp" alt="">お手軽カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef_btn-bg.webp" alt="">ブランド牛カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty_btn-bg.webp" alt="">具沢山カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local_btn-bg.webp" alt="">地域カレー</div></li>
+                    <li><div class="curryBs_btn"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality_btn-bg.webp" alt="">個性派カレー</div></li>
+                </ul>
+            </nav>
+
+            <!-- おすすめカレー -->
+            <section class="curryBs-bs-recommend">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">何を選んだらいいのかわからない人へ</span>
+                    <span class="curryBs-bs-title_h2">おすすめカレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000292"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-beef.webp" alt="大人のためのビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000288"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-chiken.webp" alt="大人のためのチキンカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000403"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-masala.webp" alt="大人のための贅沢なカレー マサラベース Premium"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000471"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-gravy.webp" alt="大人のための贅沢なカレー グレビーベース Premium"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000316"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/tomato.webp" alt="北本トマトカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000315"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hidagyu-beef1.webp" alt="飛騨牛ビーフカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000292">
+                                    <h3 class="curryBs-bs-bookName">大人のためのビーフカレー</h3>
+                                    <p><span>&yen;</span>431<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000288">
+                                    <h3 class="curryBs-bs-bookName">大人のためのチキンカレー</h3>
+                                    <p><span>&yen;</span>431<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000403">
+                                    <h3 class="curryBs-bs-bookName">大人のための贅沢なカレー マサラベース Premium</h3>
+                                    <p><span>&yen;</span>2,031<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000471">
+                                    <h3 class="curryBs-bs-bookName">大人のための贅沢なカレー グレビーベース Premium</h3>
+                                    <p><span>&yen;</span>2,031<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000316">
+                                    <h3 class="curryBs-bs-bookName">北本トマトカレー</h3>
+                                    <p><span>&yen;</span>746<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000315">
+                                    <h3 class="curryBs-bs-bookName">飛騨牛ビーフカレー</h3>
+                                    <p><span>&yen;</span>980<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000320"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/wagyuiresugi-beef.webp" alt="牛長秘伝 和牛入れすぎカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000370"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/furano-soup-pork.webp" alt="富良野スープカレー ポーク"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000693"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hakodate.webp" alt="函館 五島軒 海鮮カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000740"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/tokachi.webp" alt="十勝モッツァレラチーズカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001132"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/jonetsuHormone-beef.webp" alt="情熱ホルモン 大好評のネット限定牛タンブラックカレー発売いたします"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000970"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/tadatadaumai-beef.webp" alt="只々、旨い 超ビーフカレー 中辛"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000320">
+                                    <h3 class="curryBs-bs-bookName">牛長秘伝 和牛入れすぎカレー</h3>
+                                    <p><span>&yen;</span>1,134<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000370">
+                                    <h3 class="curryBs-bs-bookName">富良野スープカレー ポーク</h3>
+                                    <p><span>&yen;</span>863<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000693">
+                                    <h3 class="curryBs-bs-bookName">函館 五島軒 海鮮カレー</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000740">
+                                    <h3 class="curryBs-bs-bookName">十勝モッツァレラチーズカレー</h3>
+                                    <p><span>&yen;</span>594<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001132">
+                                    <h3 class="curryBs-bs-bookName">情熱ホルモン 大好評のネット限定牛タンブラックカレー発売いたします</h3>
+                                    <p><span>&yen;</span>735<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000970">
+                                    <h3 class="curryBs-bs-bookName">只々、旨い 超ビーフカレー 中辛</h3>
+                                    <p><span>&yen;</span>681<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks1.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- 有名店カレー -->
+            <section class="curryBs-bs-famousStore">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">有名店の味を手軽に楽しめる</span>
+                    <span class="curryBs-bs-title_h2">有名店カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001387"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/aubergineSweet.webp" alt="オーベルジーヌ 東京三田 ビーフカレー甘口"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001208"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/aubergine-beef.webp" alt="オーベルジーヌ ビーフカレー 中辛口"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001423"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ginzasenbikiya-beef.webp" alt="大銀座千疋屋のプレミアムビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001469"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ginzasenbikiya-chicken.webp" alt="銀座千疋屋のプレミアムチキンカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001436"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hidagyu-beef2.webp" alt="覇楼館監修 飛騨牛カレー 中辛 1人前"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000827"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hotelNewgrand-beef.webp" alt="ホテルニューグランド ビーフカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001387">
+                                    <h3 class="curryBs-bs-bookName">オーベルジーヌ 東京三田 ビーフカレー甘口</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001208">
+                                    <h3 class="curryBs-bs-bookName">オーベルジーヌ ビーフカレー 中辛口</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001423">
+                                    <h3 class="curryBs-bs-bookName">銀座千疋屋のプレミアムビーフカレー</h3>
+                                    <p><span>&yen;</span>724<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001469">
+                                    <h3 class="curryBs-bs-bookName">銀座千疋屋のプレミアムチキンカレー</h3>
+                                    <p><span>&yen;</span>702<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001436">
+                                    <h3 class="curryBs-bs-bookName">覇楼館監修 飛騨牛カレー 中辛 1人前</h3>
+                                    <p><span>&yen;</span>1,059<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000827">
+                                    <h3 class="curryBs-bs-bookName">ホテルニューグランド ビーフカレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001368"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-beef.webp" alt="伝統のビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001025"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/tomato-beef.webp" alt="トマトベースのビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000708"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/itogrill-beef.webp" alt="伊藤グリル 欧風ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000529"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/nakamurayaCreamy-beef.webp" alt="新宿中村屋 純欧風ビーフカリー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000781"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/matsumotoro-beef.webp" alt="松本楼のハイカラ ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001092"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/passion100.webp" alt="情熱100% 牛タンカレー 「赤」"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001368">
+                                    <h3 class="curryBs-bs-bookName">伝統のビーフカレー</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001025">
+                                    <h3 class="curryBs-bs-bookName">トマトベースのビーフカレー</h3>
+                                    <p><span>&yen;</span>648<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000708">
+                                    <h3 class="curryBs-bs-bookName">伊藤グリル 欧風ビーフカレー</h3>
+                                    <p><span>&yen;</span>647<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000529">
+                                    <h3 class="curryBs-bs-bookName">新宿中村屋 純欧風ビーフカリー</h3>
+                                    <p><span>&yen;</span>578<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000781">
+                                    <h3 class="curryBs-bs-bookName">松本楼のハイカラ ビーフカレー</h3>
+                                    <p><span>&yen;</span>897<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001092">
+                                    <h3 class="curryBs-bs-bookName">情熱100% 牛タンカレー 「赤」</h3>
+                                    <p><span>&yen;</span>1,021<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks2.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- 辛口カレー -->
+            <section class="curryBs-bs-hot">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">とにかく刺激が欲しい人へ</span>
+                    <span class="curryBs-bs-title_h2">辛口カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000381"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/goldenGang-beef.webp" alt="日本一辛い黄金一味ビーフカレー 鬼辛"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000878"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hotKeema-chiken.webp" alt="激辛チキン・キーマカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001254"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/lahore.webp" alt="ラホールブラックカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000883"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hot-chiken.webp" alt="会津地鶏激辛カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000741"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/cambodia-chiken.webp" alt="カンボジアチキンカリー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001467"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kyettharhinspicy.webp" alt="麻辣チェッターヒン"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000381">
+                                    <h3 class="curryBs-bs-bookName">日本一辛い黄金一味ビーフカレー 鬼辛</h3>
+                                    <p><span>&yen;</span>647<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000878">
+                                    <h3 class="curryBs-bs-bookName">激辛チキン・キーマカレー</h3>
+                                    <p><span>&yen;</span>540<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001254">
+                                    <h3 class="curryBs-bs-bookName">ラホールブラックカレー</h3>
+                                    <p><span>&yen;</span>580<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000883">
+                                    <h3 class="curryBs-bs-bookName">会津地鶏激辛カレー</h3>
+                                    <p><span>&yen;</span>1,091<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000741">
+                                    <h3 class="curryBs-bs-bookName">カンボジアチキンカリー</h3>
+                                    <p><span>&yen;</span>648<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001467">
+                                    <h3 class="curryBs-bs-bookName">麻辣チェッターヒン</h3>
+                                    <p><span>&yen;</span>1,242<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001251"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/whiteEnma.webp" alt="YOASOBI ピリリとマロロの白の閻魔さまカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001321"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/godzilla.webp" alt="伊豆大島ゴジラカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000333"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/blackEvenly-beef.webp" alt="漆黒の担担ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000329"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/queensFavorite.webp" alt="女王様のお気に入りスパイスカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000331"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/thai.webp" alt="タイ風グリーンカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000971"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/theBeef-beef.webp" alt="ザ・ビーフカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001251">
+                                    <h3 class="curryBs-bs-bookName">YOASOBI ピリリとマロロの白の閻魔さまカレー</h3>
+                                    <p><span>&yen;</span>756<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001321">
+                                    <h3 class="curryBs-bs-bookName">伊豆大島ゴジラカレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000333">
+                                    <h3 class="curryBs-bs-bookName">漆黒の担担ビーフカレー</h3>
+                                    <p><span>&yen;</span>594<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000329">
+                                    <h3 class="curryBs-bs-bookName">女王様のお気に入りスパイスカレー</h3>
+                                    <p><span>&yen;</span>647<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000331">
+                                    <h3 class="curryBs-bs-bookName">タイ風グリーンカレー</h3>
+                                    <p><span>&yen;</span>594<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000971">
+                                    <h3 class="curryBs-bs-bookName">ザ・ビーフカレー</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks3.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- お手軽カレー -->
+            <section class="curryBs-bs-easy">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">ランチや常備用にピッタリ</span>
+                    <span class="curryBs-bs-title_h2">お手軽カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001437"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hakodate.webp" alt="函館カレー 函館五島軒"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000831"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/aburiHotate.webp" alt="青森陸奥湾 炙りほたてカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000974"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/pearlBarley.webp" alt="ご飯がいらない キーマ風もち麦カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000510"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/furanoBlack-pork.webp" alt="JAふらの 富良野 ブラックカレー ［ポーク］"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000823"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/nakasatsunai-chiken.webp" alt="中札内田舎どり バターチキン"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000497"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/100hour-beef.webp" alt="100時間かけたビーフカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001437">
+                                    <h3 class="curryBs-bs-bookName">函館カレー 函館五島軒</h3>
+                                    <p><span>&yen;</span>449<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000831">
+                                    <h3 class="curryBs-bs-bookName">青森陸奥湾 炙りほたてカレー</h3>
+                                    <p><span>&yen;</span>562<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000974">
+                                    <h3 class="curryBs-bs-bookName">ご飯がいらない キーマ風もち麦カレー</h3>
+                                    <p><span>&yen;</span>389<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000510">
+                                    <h3 class="curryBs-bs-bookName">JAふらの 富良野 ブラックカレー ［ポーク］</h3>
+                                    <p><span>&yen;</span>486<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000823">
+                                    <h3 class="curryBs-bs-bookName">中札内田舎どり バターチキン</h3>
+                                    <p><span>&yen;</span>486<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000497">
+                                    <h3 class="curryBs-bs-bookName">100時間かけたビーフカレー</h3>
+                                    <p><span>&yen;</span>465<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hanamomo-chiken.webp" alt="博多華味鳥 華ももカレー"></a></li>
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/yokosuka-beef.webp" alt="よこすか海軍カレー ビーフ"></a></li>
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/nikumiso.webp" alt="肉味噌カレー"></a></li>
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/naniwaBlack-beef.webp" alt="なにわの牛すじ黒カレー"></a></li>
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/oriental.webp" alt="オリエンタルマースカレー"></a></li>
+                            <li><a href=""><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/iyobeer.webp" alt="伊予麦酒牛の欧風カレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">博多華味鳥 華ももカレー</h3>
+                                    <p><span>&yen;</span>432<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">よこすか海軍カレー ビーフ</h3>
+                                    <p><span>&yen;</span>405<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">肉味噌カレー</h3>
+                                    <p><span>&yen;</span>432<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">なにわの牛すじ黒カレー</h3>
+                                    <p><span>&yen;</span>443<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">オリエンタルマースカレー</h3>
+                                    <p><span>&yen;</span>324<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h3 class="curryBs-bs-bookName">伊予麦酒牛の欧風カレー</h3>
+                                    <p><span>&yen;</span>405<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks4.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- ブランド牛カレー -->
+            <section class="curryBs-bs-brandedBeef">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">贅沢な和牛を堪能したい人へ</span>
+                    <span class="curryBs-bs-title_h2">ブランド牛カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000952?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/otonanotameno-beef.webp" alt="常陸牛カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000873?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kobegyuEuropean-beef.webp" alt="淡路島産極味玉葱と神戸牛欧風カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001436"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hidagyu-beef2.webp" alt="覇楼館監修 飛騨牛カレー 中辛"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001322?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kurohanagyu-beef.webp" alt="黒樺牛ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001359?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/notogyuDry-beef.webp" alt="てらおか風舎の能登牛カレー 辛口"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000951?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hayamagyu-beef.webp" alt="葉山牛カレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000952?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">常陸牛カレー</h3>
+                                    <p><span>&yen;</span>2,824<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000873?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">淡路島産極味玉葱と神戸牛欧風カレー</h3>
+                                    <p><span>&yen;</span>1,815<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001436">
+                                    <h3 class="curryBs-bs-bookName">覇楼館監修 飛騨牛カレー 中辛</h3>
+                                    <p><span>&yen;</span>1,059<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001322?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">黒樺牛ビーフカレー</h3>
+                                    <p><span>&yen;</span>1,620<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001359?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">てらおか風舎の能登牛カレー 辛口</h3>
+                                    <p><span>&yen;</span>1,512<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000951?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">葉山牛カレー</h3>
+                                    <p><span>&yen;</span>1,404<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001451?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/yonezawagyu-beef.webp" alt="米沢牛ビーフシチュー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001327?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/omigyu-beef.webp" alt="近江スエヒロ本店 近江牛ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000504"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ningyocho-beef.webp" alt="人形町今半 じっくり煮込んだ黒毛和牛ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000746?category_page_id=ct130"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ikigyu-beef.webp" alt="壱岐牛カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000783?category_page_id=ct130"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ishigakigyu-beef.webp" alt="石垣牛のカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000954?category_page_id=ct130"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kobegyu-beef.webp" alt="神戸牛ビーフカレー 赤箱"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001451?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">米沢牛ビーフシチュー</h3>
+                                    <p><span>&yen;</span>1,404<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001327?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">近江スエヒロ本店 近江牛ビーフカレー</h3>
+                                    <p><span>&yen;</span>1,275<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000504">
+                                    <h3 class="curryBs-bs-bookName">人形町今半 じっくり煮込んだ黒毛和牛ビーフカレー</h3>
+                                    <p><span>&yen;</span>843<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000746?category_page_id=ct130">
+                                    <h3 class="curryBs-bs-bookName">壱岐牛カレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000783?category_page_id=ct130">
+                                    <h3 class="curryBs-bs-bookName">石垣牛のカレー</h3>
+                                    <p><span>&yen;</span>810<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000954?category_page_id=ct130">
+                                    <h3 class="curryBs-bs-bookName">神戸牛ビーフカレー 赤箱</h3>
+                                    <p><span>&yen;</span>1,296<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks5.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- 具沢山カレー -->
+            <section class="curryBs-bs-hearty">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">お肉も具材も楽しめる</span>
+                    <span class="curryBs-bs-title_h2">具沢山カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000404?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/gorotto-beef.webp" alt="牛テールカレー gorotto～ゴロット～"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000473?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/furano-soup-chiken.webp" alt="富良野スープカレー チキン"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000370?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/furano-soup-pork.webp" alt="富良野スープカレー ポーク"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001463?category_page_id=ct144"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hanamidori-aigake.webp" alt="博多華味鳥 あいがけカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000544?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/garaku-soup-chiken.webp" alt="GARAKU 札幌スープカレーチキン"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001379?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/garaku-pork.webp" alt="GARAKU 札幌スープカレー豚角煮"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000404?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">牛テールカレー gorotto～ゴロット～</h3>
+                                    <p><span>&yen;</span>2,160<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000473?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">富良野スープカレー チキン</h3>
+                                    <p><span>&yen;</span>863<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000370?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">富良野スープカレー ポーク</h3>
+                                    <p><span>&yen;</span>863<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001463?category_page_id=ct144">
+                                    <h3 class="curryBs-bs-bookName">博多華味鳥 あいがけカレー</h3>
+                                    <p><span>&yen;</span>994<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000544?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">GARAKU 札幌スープカレーチキン</h3>
+                                    <p><span>&yen;</span>1,026<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001379?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">GARAKU 札幌スープカレー豚角煮</h3>
+                                    <p><span>&yen;</span>1,080<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001467?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kyettharhinspicy.webp" alt="麻辣チェッターヒン"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000320?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/wagyuiresugi-beef.webp" alt="牛長秘伝 和牛入れすぎカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000464?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/sapporo-soup-chiken.webp" alt="本場札幌 スープカレー チキン"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000825?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hearty.webp" alt="宝塚 程一彦流 具沢山カレー 辛口 「食べごたえ」の黒"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000782?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/japaneseStock.webp" alt="東京荒木町 鈴なり 具沢山和出汁カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001375?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/withBone-soup-chiken.webp" alt="骨付きチキンのスープカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001467?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">麻辣チェッターヒン</h3>
+                                    <p><span>&yen;</span>1,242<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000320?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">牛長秘伝 和牛入れすぎカレー</h3>
+                                    <p><span>&yen;</span>1,134<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000464?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">本場札幌 スープカレー チキン</h3>
+                                    <p><span>&yen;</span>843<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000825?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">宝塚 程一彦流 具沢山カレー 辛口 「食べごたえ」の黒</h3>
+                                    <p><span>&yen;</span>735<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000782?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">東京荒木町 鈴なり 具沢山和出汁カレー</h3>
+                                    <p><span>&yen;</span>675<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001375?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">骨付きチキンのスープカレー</h3>
+                                    <p><span>&yen;</span>735<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks6.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+            <!-- 地域カレー -->
+            <section class="curryBs-bs-local">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">地域の名産をカレーで味わえる</span>
+                    <span class="curryBs-bs-title_h2">地域カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000318?category_page_id=ct136"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kingCrab.webp" alt="北海道名産 たらばかにカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001365?category_page_id=ct137"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ito-gyutan.webp" alt="肉のいとう杜の都仙台名物 牛たんカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001357?category_page_id=ct157"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/notogyu-beef.webp" alt="てらおか風舎の能登牛カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000321?category_page_id=ct141"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/oyster.webp" alt="広島名産 かきカレー 中辛"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001010?category_page_id=ct140"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/onion.webp" alt="淡路島玉ねぎカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001328?category_page_id=ct141"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/40010-pork.webp" alt="四万十ポークと山椒のカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000318?category_page_id=ct136">
+                                    <h3 class="curryBs-bs-bookName">北海道名産 たらばかにカレー</h3>
+                                    <p><span>&yen;</span>810<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001365?category_page_id=ct137">
+                                    <h3 class="curryBs-bs-bookName">肉のいとう杜の都仙台名物 牛たんカレー</h3>
+                                    <p><span>&yen;</span>1,275<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001357?category_page_id=ct157">
+                                    <h3 class="curryBs-bs-bookName">てらおか風舎の能登牛カレー</h3>
+                                    <p><span>&yen;</span>1,512<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000321?category_page_id=ct141">
+                                    <h3 class="curryBs-bs-bookName">広島名産 かきカレー 中辛</h3>
+                                    <p><span>&yen;</span>573<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001010?category_page_id=ct140">
+                                    <h3 class="curryBs-bs-bookName">淡路島玉ねぎカレー</h3>
+                                    <p><span>&yen;</span>681<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001328?category_page_id=ct141">
+                                    <h3 class="curryBs-bs-bookName">四万十ポークと山椒のカレー</h3>
+                                    <p><span>&yen;</span>519<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000999?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ginger.webp" alt="高知県産生姜のカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000389?category_page_id=ct142"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/sagagyu-beef.webp" alt="佐賀牛ビーフカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001193?category_page_id=ct142"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/nanshuFarm-pork.webp" alt="南州農場 黒豚カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001008?category_page_id=ct141"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/fuku.webp" alt="ふくカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000687?category_page_id=ct142"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/sazae.webp" alt="壱岐の島 さざえカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000745?category_page_id=ct142"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/ika.webp" alt="壱岐の島 いかカレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000999?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">高知県産生姜のカレー</h3>
+                                    <p><span>&yen;</span>486<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000389?category_page_id=ct142">
+                                    <h3 class="curryBs-bs-bookName">佐賀牛ビーフカレー</h3>
+                                    <p><span>&yen;</span>754<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001193?category_page_id=ct142">
+                                    <h3 class="curryBs-bs-bookName">南州農場 黒豚カレー</h3>
+                                    <p><span>&yen;</span>492<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001008?category_page_id=ct141">
+                                    <h3 class="curryBs-bs-bookName">ふくカレー</h3>
+                                    <p><span>&yen;</span>594<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000687?category_page_id=ct142">
+                                    <h3 class="curryBs-bs-bookName">壱岐の島 さざえカレー</h3>
+                                    <p><span>&yen;</span>767<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000745?category_page_id=ct142">
+                                    <h3 class="curryBs-bs-bookName">壱岐の島 いかカレー</h3>
+                                    <p><span>&yen;</span>767<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks7.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+
+            <!-- 個性派カレー -->
+            <section class="curryBs-bs-originality">
+                <div class="curryBs-bs-bar"></div>
+                <h2 class="curryBs-bs-title">
+                    <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/bs-title-bg.webp" alt="" class="bs-title-bg">
+                    <span class="curryBs-bs-title-sub">普通のカレーでは満足できない人へ</span>
+                    <span class="curryBs-bs-title_h2">個性派カレー</span>
+                </h2>
+                <div class="curryBs-bs-translateX">
+                    <div class="curryBs-bs-arrow_btn curryBs-bs_btn-off curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="左に隠れている6冊の本を右にスライドさせるためのボタン"></div>
+                    <div class="curryBs-bs-next_btn curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-btn.svg" alt="右に隠れている6冊の本を左にスライドさせるためのボタン"></div>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000314?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/okhotsk.webp" alt="オホーツク 流氷カリー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000319?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/strawberry.webp" alt="いちごのカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000330?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/hirakataBeer.webp" alt="枚方ビールカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000751?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/torihada-chiken.webp" alt="小野員裕の鳥肌の立つカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001009?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/1300years.webp" alt="1300年カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001047?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/plum.webp" alt="黒毛和牛 梅カレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000314?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">オホーツク 流氷カリー</h3>
+                                    <p><span>&yen;</span>810<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000319?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">いちごのカレー</h3>
+                                    <p><span>&yen;</span>756<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000330?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">枚方ビールカレー</h3>
+                                    <p><span>&yen;</span>735<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000751?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">小野員裕の鳥肌の立つカレー</h3>
+                                    <p><span>&yen;</span>540<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001009?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">1300年カレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001047?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">黒毛和牛 梅カレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <article class="curryBs-bs-slide">
+                        <ul class="curryBs-bs-books">
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000562?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/imoni.webp" alt="いも煮カレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000563?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/cherry.webp" alt="さくらんぼカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000459?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/withBread.webp" alt="最高にパンに合うカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000001321?category_page_id=ct129"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/godzilla.webp" alt="伊豆大島ゴジラカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000753?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/29spicesTomato.webp" alt="29種の焙煎スパイスでじっくり煮込んだ国産ビーフの熟成トマトカレー"></a></li>
+                            <li><a href="https://www.kitano-ace.jp/view/item/000000000365?category_page_id=ct111"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/book/kyoto.webp" alt="京都 三味一体カレー"></a></li>
+                        </ul>
+                        <div class="curryBs-bs-bar curryBs-bs-bar-translateY"></div>    
+                        <ul class="curryBs-bs-text">
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000562?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">いも煮カレー</h3>
+                                    <p><span>&yen;</span>999<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000563?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">さくらんぼカレー</h3>
+                                    <p><span>&yen;</span>999<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000459?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">最高にパンに合うカレー</h3>
+                                    <p><span>&yen;</span>594<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000001321?category_page_id=ct129">
+                                    <h3 class="curryBs-bs-bookName">伊豆大島ゴジラカレー</h3>
+                                    <p><span>&yen;</span>864<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000753?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">29種の焙煎スパイスでじっくり煮込んだ国産ビーフの熟成トマトカレー</h3>
+                                    <p><span>&yen;</span>573<span>税込</span></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.kitano-ace.jp/view/item/000000000365?category_page_id=ct111">
+                                    <h3 class="curryBs-bs-bookName">京都 三味一体カレー</h3>
+                                    <p><span>&yen;</span>810<span>税込</span></p>
+                                </a>
+                            </li>
+                        </ul>    
+                    </article>
+                    <div class="curryBs-bs-bgBooks curryBs-pc"><img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/curryBs-bs-bgBooks8.webp" alt="背景に本がランダムに並んでいる"></div>
+                </div>
+            </section>
+            <div class="curryBs-bs-bar"></div>
+            <section class="curryBs-epilogue">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/categoryMenu-book1.webp" alt="大きい本の画像" class="curryBs-epilogue-bg curryBs-sp">
+                <img src="https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/responsive/categoryMenu-book.webp" alt="大きい本の画像" class="curryBs-epilogue-bg curryBs-pc">
+                <p class="curryBs-sp">
+                    <span>カレーとの新たな出会いはありましたか？</span>
+                    本棚に収まりきれないカレーが<br>
+                    <span>まだたくさんありますので、</span>
+                    <span>ぜひこちらも覗いてみてください！</span>
+                </p>
+                <p class="curryBs-pc">
+                    カレーとの新たな出会いはありましたか？<br>
+                    本棚に収まりきれないカレーがまだたくさんありますので、<br>
+                    ぜひこちらも覗いてみてください！
+                </p>
+                <div class="curryBs-cta_btn curryBs_btn">
+                    <a href="">
+                        すべてのレトルトカレーを見る
+                        <div class="curryBs-cta_btn-icon"><div></div><div></div></div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <div class="curryBs_footer">Footer</div>
+    </body>
+</html>
