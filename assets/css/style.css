@@ -486,7 +486,7 @@ html body .curryBs_main {
 }
 html body .curryBs_main .curryBs-prologue {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   text-align: center;
 }
@@ -495,7 +495,7 @@ html body .curryBs_main .curryBs-prologue span {
   width: fit-content;
   margin: 0 auto;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   transform: translateX(8px);
 }
@@ -542,6 +542,7 @@ html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn {
   align-items: center;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 600;
   color: #FFFFFF;
   position: relative;
 }
@@ -733,12 +734,15 @@ html body .curryBs_main .curryBs-bs-local {
 html body .curryBs_main .curryBs-bs-originality {
   background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg1.webp");
 }
-html body .curryBs_main .curryBs-bs-bar {
+html body .curryBs_main .curryBs-bs-bar-end {
   width: 100%;
   height: 20px;
   background-color: #855900;
   position: relative;
-  z-index: -1;
+  z-index: 0;
+}
+html body .curryBs_main .curryBs-bs-bar-end img {
+  height: 100%;
 }
 html body .curryBs_main .curryBs-epilogue {
   padding: 150px 0;
@@ -756,7 +760,7 @@ html body .curryBs_main .curryBs-epilogue .curryBs-epilogue-bg {
 }
 html body .curryBs_main .curryBs-epilogue p {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   text-align: center;
 }
@@ -765,7 +769,7 @@ html body .curryBs_main .curryBs-epilogue p span {
   width: fit-content;
   margin: 0 auto;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   transform: translateX(8px);
 }
@@ -787,7 +791,7 @@ html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a {
   align-items: center;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 600;
   color: #FFFFFF;
 }
 html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon {
@@ -943,7 +947,7 @@ html .curryBs_body-notSession {
     justify-content: end;
   }
   html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-bookshelf, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bookshelf {
-    width: 50%;
+    width: 52.5%;
     height: 100%;
     object-fit: cover;
   }
@@ -1283,6 +1287,9 @@ html .curryBs_body-notSession {
   html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books li:nth-of-type(3) {
     transform: translateY(10px);
   }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books li:nth-of-type(3):hover {
+    transform: translateY(2.5px);
+  }
   html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
     transform: translateY(-7.5px);
   }
@@ -1297,7 +1304,6 @@ html .curryBs_body-notSession {
   html body .curryBs_main .curryBs-epilogue p {
     padding-left: 10px;
     font-size: 20px;
-    font-weight: 400;
     line-height: 48px;
     position: relative;
     top: -16px;
