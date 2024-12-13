@@ -582,9 +582,11 @@ html body .curryBs_main .curryBs-bs-recommend, html body .curryBs_main .curryBs-
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-local .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-bar {
   width: 100%;
   height: 20px;
-  background-color: #855900;
   position: relative;
   z-index: -1;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-bar img {
+  height: 100%;
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title {
   height: 27vw;

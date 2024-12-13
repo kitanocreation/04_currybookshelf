@@ -578,9 +578,12 @@ html {
                 .curryBs-bs-bar {
                     width: 100%;
                     height: 20px;
-                    background-color: $brown;
                     position: relative;
                     z-index: -1;
+
+                    img {
+                        height: 100%;
+                    }
                 }
 
                 .curryBs-bs-title {
