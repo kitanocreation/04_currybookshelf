@@ -421,8 +421,8 @@ html body .curryBs-fv-notSession h1, html body .curryBs-fv-session h1 {
   animation: h1 0.8s 7.4s ease-in-out forwards;
 }
 html body .curryBs-fv-notSession h1 img, html body .curryBs-fv-session h1 img {
-  width: 37vw;
-  transform: translateY(-300%);
+  width: 35vw;
+  transform: translateY(-45%);
 }
 @keyframes h1 {
   from {
@@ -1029,7 +1029,7 @@ html .curryBs_body-notSession {
     height: 100px;
   }
   html body .curryBs-fv-notSession h1 img, html body .curryBs-fv-session h1 img {
-    width: 27vw;
+    width: 20vw;
     transform: translateY(0);
   }
   html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-spoon-session {
