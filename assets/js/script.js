@@ -75,3 +75,19 @@ $(function() {
         }
     });
 });
+
+// 表示の更新を行う関数
+function updateDisplay(sessionCount) {
+    if (sessionCount > 1) {
+        $('.curryBs_body-notSession').removeClass('curryBs_body-notSession');
+        $('.curryBs-loading-notSession').removeClass('curryBs-loading-notSession');
+        $('.curryBs-fv-notSession').removeClass('curryBs-fv-notSession');
+        $('.curryBs-fv-session').css('display', 'block');
+    } else {
+        // 初回セッションの表示設定（必要に応じて）
+        $('.curryBs-body-notSession').addClass('curryBs_body-notSession');
+        $('.curryBs-loading-notSession').addClass('curryBs-loading-notSession');
+        $('.curryBs-fv-notSession').addClass('curryBs-fv-notSession');
+        $('.curryBs-fv-session').css('display', 'none');
+    }
+}
