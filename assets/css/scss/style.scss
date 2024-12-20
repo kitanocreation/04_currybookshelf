@@ -656,9 +656,10 @@ html {
                                 position: relative;
 
                                 .curryBs-popUp {
-                                    width: 125%;
-                                    height: 90px;
-                                    padding: 20px 15px 15px 15px;
+                                    width: 150%;
+                                    height: 125px;
+                                    display: flex;
+                                    justify-content: center;
                                     @include font-s;
                                     line-height: 20.3px;
                                     position: absolute;
@@ -677,6 +678,8 @@ html {
                                     }
 
                                     p {
+                                        width: 75%;
+                                        padding-top: 15px;
                                         white-space: initial;
                                         animation: curryBs-popUp 3.5s infinite;
                                     }
@@ -1376,7 +1379,7 @@ html {
                                     width: 185px;
 
                                     .curryBs-popUp {
-                                        width: 115%;
+                                        width: 125%;
                                     }
                                 }
                             }

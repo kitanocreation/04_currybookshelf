@@ -653,9 +653,10 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .cu
   position: relative;
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp {
-  width: 125%;
-  height: 90px;
-  padding: 20px 15px 15px 15px;
+  width: 150%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
   font-size: 14px;
   line-height: 14px;
   line-height: 20.3px;
@@ -676,6 +677,8 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .cu
   animation: curryBs-popUp 3.5s infinite;
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p {
+  width: 75%;
+  padding-top: 15px;
   white-space: initial;
   animation: curryBs-popUp 3.5s infinite;
 }
@@ -1314,7 +1317,7 @@ html .curryBs_body-notSession {
     width: 185px;
   }
   html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp {
-    width: 115%;
+    width: 125%;
   }
   html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text {
     margin: 10px auto 0 auto;
