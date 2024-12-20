@@ -630,7 +630,7 @@ html {
 
                     article {
                         width: fit-content;
-                        margin-top: 42px;
+                        margin-top: 100px;
 
                         .curryBs-bs-books, .curryBs-bs-text {
                             margin-left: 24px;
@@ -653,6 +653,166 @@ html {
 
                             li {
                                 width: 125px;
+                                position: relative;
+
+                                .curryBs-popUp {
+                                    width: 125%;
+                                    height: 90px;
+                                    padding: 20px 15px 15px 15px;
+                                    @include font-s;
+                                    line-height: 20.3px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translate(-50%, -80%);
+                                    opacity: 0;
+                                    z-index: 1;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        @include absolute;
+                                        z-index: -1;
+                                        animation: curryBs-popUp 3.5s infinite;    
+                                    }
+
+                                    p {
+                                        white-space: initial;
+                                        animation: curryBs-popUp 3.5s infinite;
+                                    }
+
+                                    @keyframes curryBs-popUp {
+
+                                        0% {
+                                            transform: translateY(0);
+                                        }
+    
+                                        10% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        20% {
+                                            transform: translateY(0);
+                                        }
+
+                                        30% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        40% {
+                                            transform: translateY(0);
+                                        }
+
+                                        50% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        60% {
+                                            transform: translateY(0);
+                                        }
+
+                                        70% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        80% {
+                                            transform: translateY(0);
+                                        }
+
+                                        90% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        100% {
+                                            transform: translateY(0);
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp1 {
+                                    animation: curryBs-popUp1 8.25s infinite;
+
+                                    @keyframes curryBs-popUp1 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        5% {
+                                            opacity: 1;
+                                        }
+
+                                        28% {
+                                            opacity: 1;
+                                        }
+
+                                        33% {
+                                            opacity: 0;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp2 {
+                                    animation: curryBs-popUp2 8.25s infinite;
+
+                                    @keyframes curryBs-popUp2 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        33% {
+                                            opacity: 0;
+                                        }
+
+                                        38% {
+                                            opacity: 1;
+                                        }
+
+                                        61% {
+                                            opacity: 1;
+                                        }
+
+                                        66% {
+                                            opacity: 0;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp3 {
+                                    animation: curryBs-popUp3 8.25s infinite;
+
+                                    @keyframes curryBs-popUp3 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        66% {
+                                            opacity: 0;
+                                        }
+
+                                        71% {
+                                            opacity: 1;
+                                        }
+
+                                        95% {
+                                            opacity: 1;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
                             }
                         }
 
@@ -1214,6 +1374,10 @@ html {
 
                                 li {
                                     width: 185px;
+
+                                    .curryBs-popUp {
+                                        width: 115%;
+                                    }
                                 }
                             }
 
