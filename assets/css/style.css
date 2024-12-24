@@ -725,7 +725,7 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .cu
   }
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1 {
-  animation: curryBs-popUp1 8.25s infinite;
+  animation: curryBs-popUp1 14s infinite;
 }
 @keyframes curryBs-popUp1 {
   0% {
@@ -745,7 +745,7 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .cu
   }
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2 {
-  animation: curryBs-popUp2 8.25s infinite;
+  animation: curryBs-popUp2 14s infinite;
 }
 @keyframes curryBs-popUp2 {
   0% {
@@ -768,7 +768,7 @@ html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .cu
   }
 }
 html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3 {
-  animation: curryBs-popUp3 8.25s infinite;
+  animation: curryBs-popUp3 14s infinite;
 }
 @keyframes curryBs-popUp3 {
   0% {
