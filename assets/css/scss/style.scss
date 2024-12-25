@@ -1,0 +1,1653 @@
+@import './base';
+
+.curryBs-pc {
+    display: none;
+}
+
+html {
+
+    body {
+
+        .curryBs-loading {
+            display: none;
+        }
+
+        .curryBs-loading-notSession {
+            overflow-x: hidden;
+            width: 100vw;
+            height: 100vh;
+            background-color: $whitesmoke;
+            @include center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            z-index: 10000;
+            animation: curryBs-loading 5.7s ease-in-out forwards;
+
+            ul {
+                width: 245px;
+                margin-bottom: 75px;
+                position: absolute;
+            }
+
+            ul:nth-of-type(1) {
+
+                li {
+                    width: 47.5px;
+                    height: 70px;
+                    position: absolute;
+                    top: 0;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                li:nth-of-type(1) {
+                    left: 0;
+                    transform: translateX(20%);
+                    animation: curryBs-loading-book1 .5s 1s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-book1 {
+
+                    0% {
+                        height: 70px;
+                        transform: translateX(20%);
+                    }
+
+                    30% {
+                        transform: translate(20%, 20px);
+                        height: 70px;
+                    }
+
+                    100% {
+                        height: 0;
+                        transform: translate(20%, -50px);
+                    }
+                }    
+
+                li:nth-of-type(2) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    animation: curryBs-loading-book2 .5s 1.9s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-book2 {
+
+                    0% {
+                        height: 70px;
+                        transform: translateX(-50%);
+                    }
+
+                    30% {
+                        height: 70px;
+                        transform: translate(-50%, 20px);
+                    }
+
+                    100% {
+                        height: 0;
+                        transform: translate(-50%, -50px);
+                    }
+                }  
+                
+                li:nth-of-type(3) {
+                    right: 0;
+                    transform: translateX(-20%);
+                    animation: curryBs-loading-book3 .5s 2.8s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-book3 {
+
+                    0% {
+                        transform: translateX(-20%);
+                        height: 70px;
+                    }
+
+                    30% {
+                        transform: translate(-20%, 20px);
+                        height: 70px;
+                    }
+
+                    100% {
+                        height: 0;
+                        transform: translate(-20%, -50px);
+                    }
+                }    
+            }
+
+            ul:nth-of-type(2) {
+                
+                li {
+                    width: 65px;
+                    height: 0;
+                    position: absolute;
+                    top: 0;
+                    transform: translateY(-50px);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                li:nth-of-type(1) {
+                    left: 0;
+                    animation: curryBs-loading-curry1 .4s 1.5s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-curry1 {
+
+                    0% {
+                        height: 0;
+                        transform: translateY(-50px);
+                    }
+
+                    100% {
+                        width: 70px;
+                        height: 47.5px;
+                        transform: translateY(0);
+                    }
+                }    
+
+                li:nth-of-type(2) {
+                    left: 50%;
+                    animation: curryBs-loading-curry2 .4s 2.4s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-curry2 {
+
+                    0% {
+                        height: 0;
+                        transform: translate(-50%, -50px);
+                    }
+
+                    100% {
+                        transform: translate(-50%, 0);
+                        width: 70px;
+                        height: 47.5px;
+                    }
+                }    
+                
+                li:nth-of-type(3) {
+                    right: 0;
+                    animation: curryBs-loading-curry3 .4s 3.3s ease-in-out forwards;
+                }
+
+                @keyframes curryBs-loading-curry3 {
+
+                    0% {
+                        height: 0;                        
+                        transform: translateY(-50px);
+                    }
+
+                    100% {
+                        width: 70px;
+                        height: 47.5px;                        
+                        transform: translateY(0);
+                    }
+                }    
+            }
+
+            p {
+                @include font-m;
+                font-weight: 600;
+                color: $yellow;
+                transform: translateY(75px);
+            }
+        }
+
+        @keyframes curryBs-loading {
+
+            0% {
+                opacity: 1;
+            }
+
+            80% {
+                opacity: 1;
+                z-index: 10000;
+            }
+
+            99% {
+                z-index: 10000;
+            }
+
+            100% {
+                opacity: 0;
+                z-index: -10000;
+            }
+        }    
+
+        .curryBs-fv {
+            display: none;
+        }
+       
+        .curryBs-fv-notSession, .curryBs-fv-session {
+            height: 525px;
+            background-color: $color-curry;
+            position: relative;
+
+            .curryBs-fv-images {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .curryBs-fv-bookshelf {
+                    z-index: 1;
+                }
+
+                .curryBs-fv-curtain {
+                    width: 100%;
+                    height: 100%;
+                    @include absolute;
+                    z-index: 2;
+                    animation: curryBs-fv-curtain 1s 5.7s ease-in-out forwards;
+                
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                @keyframes curryBs-fv-curtain {
+
+                    from {
+                        transform: translateX(0);
+                    }
+
+                    to {
+                        transform: translateX(-47.5%);
+                    }
+                }    
+    
+                .curryBs-fv-frame {
+                    width: 100%;
+                    height: 120px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    opacity: 0;
+                    z-index: 3;
+                    animation: curryBs-fv-frame .5s 7s ease-in-out forwards;
+    
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                @keyframes curryBs-fv-frame {
+
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
+                }    
+    
+                .curryBs-fv-spoon {
+                    width: 70%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translateY(-30%);
+                    opacity: 0;
+                    z-index: 3;
+                    animation: curryBs-fv-spoon1 2s 7s ease-in-out forwards, curryBs-fv-spoon2 2.6s 9s infinite;
+                }
+
+                @keyframes curryBs-fv-spoon1 {
+
+                    0% {
+                        opacity: 0;
+                    }
+    
+                    25% {
+                        opacity: 1;
+                    }
+
+                    72% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    79% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    86% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    93% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    100% {
+                        transform: translateY(-30%) rotate(0);
+                        opacity: 1;
+                    }
+                } 
+                
+                @keyframes curryBs-fv-spoon2 {
+
+                    0% {
+                        transform: translateY(-30%) rotate(0)   
+                    }
+                    
+                    80% {
+                        transform: translateY(-30%) rotate(0)
+                    }
+
+                    85% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    90% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    95% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    100% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+                }
+    
+                .curryBs-fv-bg {
+                    width: 100%;
+                    height: 75px;
+                    background-color: $yellow;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: translateY(25px);
+                    opacity: 0;
+                    z-index: 2;
+                    animation: curryBs-fv-bg .5s 7s ease-in-out forwards;
+                }    
+
+                @keyframes curryBs-fv-bg {
+
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;                 
+                    }
+                }    
+            }
+
+            h1 {
+                width: 52.5%;
+                height: 100%;
+                @include center;
+                @include absolute;
+                opacity: 0;
+                z-index: 2;
+                animation: h1 .8s 7.4s ease-in-out forwards;
+
+                img {
+                    width: 35vw;
+                    transform: translateY(-45%);
+                }
+            }
+
+            @keyframes h1 {
+
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;                 
+                }
+            }    
+        }
+
+        .curryBs-fv-notSession {
+            display: block;
+        }
+
+        .curryBs-fv-session {
+
+            .curryBs-fv-images {
+
+                .curryBs-fv-curtain {
+                    animation: none;
+                    transform: translateX(-47.5%);
+                }
+
+                .curryBs-fv-frame {
+                    animation: none;
+                    opacity: 1;
+                }
+
+                .curryBs-fv-spoon-session {
+                    width: 70%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translateY(-30%);
+                    z-index: 3;
+                    animation: curryBs-fv-spoon-session 2.6s 2s infinite;
+                }
+
+                @keyframes curryBs-fv-spoon-session {
+
+                    0% {
+                        transform: translateY(-30%) rotate(0)   
+                    }
+                    
+                    80% {
+                        transform: translateY(-30%) rotate(0)
+                    }
+
+                    85% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    90% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+
+                    95% {
+                        transform: translateY(-30%) rotate(-7.5deg);
+                    }
+
+                    100% {
+                        transform: translateY(-30%) rotate(0);
+                    }
+                }
+
+                .curryBs-fv-bg {
+                    animation: none;
+                    opacity: 1;
+                }
+            }
+
+            h1 {
+                animation: none;
+                opacity: 1;
+            }
+        }
+
+        .curryBs_main {
+            padding-top: 80px;
+            background-color: $yellow;
+
+            .curryBs-prologue {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 36px;
+                text-align: center;
+
+                span {
+                    display: block;
+                    width: fit-content;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 36px;
+                    transform: translateX(8px);
+                }
+            }
+
+            .curryBs-categoryMenu {
+                width: 100%;
+                padding: 100px 0;
+                margin-top: 80px;
+                position: relative;
+                z-index: 0;
+
+                .curryBs-categoryMenu-bg {
+                    width: 100%;
+                    height: 100%;
+                    @include absolute;
+                    transform: translateY(30px);
+                    z-index: -1;
+                }
+
+                h2 {
+                    @include font-l;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                ul {
+                    width: calc(100% - 60px);
+                    margin: 24px auto 0 auto;
+                    @include center;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: calc(50% - 6px);
+                        margin-top: 12px;
+
+                        .curryBs_btn {
+                            width: 100%;
+                            border-radius: 20px;
+                            padding: 32px 0;
+                            @include center;
+                            @include font-m;
+                            font-weight: 600;
+                            color: $white;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 20px;
+                                background-color: rgba(0, 0, 0, .2);
+                                @include absolute;
+                                z-index: -1;
+                            }
+
+                            &:active {
+                                opacity: .8;
+                            }
+                            
+                            img {
+                                height: 100%;
+                                border-radius: 20px;
+                                @include absolute;
+                                z-index: -1;
+                            }    
+                        }
+                    }
+
+                    li:nth-of-type(1), li:nth-of-type(2) {
+                        margin-top: 0;
+                    }
+
+                    li:nth-of-type(2), li:nth-of-type(4), li:nth-of-type(6), li:nth-of-type(8) {
+                        margin-left: 12px;
+                    }
+                }
+            }
+
+            .curryBs-bs-recommend, .curryBs-bs-famousStore, .curryBs-bs-hot, .curryBs-bs-easy, .curryBs-bs-brandedBeef, .curryBs-bs-hearty, .curryBs-bs-local, .curryBs-bs-originality {
+                @include bg;
+                position: relative;
+                z-index: 0;
+
+                .curryBs-bs-bar {
+                    width: 100%;
+                    height: 20px;
+                    position: relative;
+                    z-index: -1;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .curryBs-bs-title {
+                    height: 27vw;
+                    @include center;
+                    flex-direction: column;
+                    position: relative;
+
+                    .bs-title-bg {
+                        width: 75%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%, -10px);
+                        z-index: -1;
+                    }
+
+                    span {
+                        transform: translateY(-5px);
+                    }
+
+                    .curryBs-bs-title-sub {
+                        display: block;
+                        margin-bottom: 7.5px;
+                        @include font-s;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                    }
+
+                    .curryBs-bs-title_h2 {
+                        display: block;
+                        @include font-l;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                        text-align: center;    
+                    }
+                }
+
+                .curryBs-bs-translateX {
+                    overflow-x: scroll;
+                    white-space: nowrap;
+
+                    article {
+                        width: fit-content;
+                        margin-top: 100px;
+
+                        .curryBs-bs-books, .curryBs-bs-text {
+                            margin-left: 24px;
+    
+                            li {
+                                display: inline-block;
+    
+                                a {
+                                    display: block;
+
+                                    img {
+                                        width: 104%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .curryBs-bs-books {
+                            transform: translateY(5px);
+
+                            li {
+                                width: 125px;
+                                position: relative;
+
+                                .curryBs-popUp {
+                                    width: 150%;
+                                    height: 125px;
+                                    @include center;
+                                    @include font-s;
+                                    line-height: 20.3px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translate(-50%, -80%);
+                                    opacity: 0;
+                                    z-index: 1;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        @include absolute;
+                                        z-index: -1;
+                                        animation: curryBs-popUp 3.5s infinite;    
+                                    }
+
+                                    p {
+                                        width: 75%;
+                                        padding-top: 15px;
+                                        white-space: initial;
+                                        font-size: 12px;
+                                        letter-spacing: 1.2px;
+                                        line-height: 17.5px;
+                                        position: relative;
+                                        bottom: 17.5px;
+                                        left: 5px;
+                                        animation: curryBs-popUp 3.5s infinite;
+                                    }
+
+                                    @keyframes curryBs-popUp {
+
+                                        0% {
+                                            transform: translateY(0);
+                                        }
+    
+                                        10% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        20% {
+                                            transform: translateY(0);
+                                        }
+
+                                        30% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        40% {
+                                            transform: translateY(0);
+                                        }
+
+                                        50% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        60% {
+                                            transform: translateY(0);
+                                        }
+
+                                        70% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        80% {
+                                            transform: translateY(0);
+                                        }
+
+                                        90% {
+                                            transform: translateY(-5px);
+                                        }
+
+                                        100% {
+                                            transform: translateY(0);
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp1 {
+                                    animation: curryBs-popUp1 14s infinite;
+
+                                    @keyframes curryBs-popUp1 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        5% {
+                                            opacity: 1;
+                                        }
+
+                                        28% {
+                                            opacity: 1;
+                                        }
+
+                                        33% {
+                                            opacity: 0;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp2 {
+                                    animation: curryBs-popUp2 14s infinite;
+
+                                    @keyframes curryBs-popUp2 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        33% {
+                                            opacity: 0;
+                                        }
+
+                                        38% {
+                                            opacity: 1;
+                                        }
+
+                                        61% {
+                                            opacity: 1;
+                                        }
+
+                                        66% {
+                                            opacity: 0;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+
+                                .curryBs-popUp3 {
+                                    animation: curryBs-popUp3 14s infinite;
+
+                                    @keyframes curryBs-popUp3 {
+
+                                        0% {
+                                            opacity: 0;
+                                        }
+
+                                        66% {
+                                            opacity: 0;
+                                        }
+
+                                        71% {
+                                            opacity: 1;
+                                        }
+
+                                        95% {
+                                            opacity: 1;
+                                        }
+
+                                        100% {
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .curryBs-bs-bar {
+                            width: calc(100% + 24px);
+                        }        
+
+                        .curryBs-bs-text {
+                            display: flex;
+                            transform: translateY(-10px);
+    
+                            li {
+                                width: 122px;
+                                height: fit-content;
+                                background-color: $whitesmoke;
+    
+                                a {
+                                    padding: 4px 0;
+                                    
+                                    h3 {
+                                        white-space: initial;
+                                        width: calc(100% - 16px);
+                                        margin: 0 auto;
+                                        @include font-s;
+                                        letter-spacing: 0;
+                                        line-height: 23.1px;
+                                    }
+    
+                                    p {
+                                        margin-top: 4px;
+                                        @include font-m;
+                                        font-weight: 600;
+                                        letter-spacing: 0;
+                                        line-height: 26.4px;
+                                        text-align: center;
+    
+                                        span {
+                                            margin: 2px;
+                                            @include font-s;
+                                        }
+                                    }
+                                }
+                            }
+
+                            li:nth-of-type(1) {
+                                transform: translateX(4px);
+                            }
+
+                            li:nth-of-type(2) {
+                                transform: translateX(12px);
+                            }
+
+                            li:nth-of-type(3) {
+                                transform: translateX(20px);
+                            }
+
+                            li:nth-of-type(4) {
+                                transform: translateX(28px);
+                            }
+
+                            li:nth-of-type(5) {
+                                transform: translateX(36px);
+                            }
+
+                            li:nth-of-type(6) {
+                                transform: translateX(44px);
+                            }
+                        }    
+                    }
+
+                    article:nth-of-type(2) {
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+
+            .curryBs-bs-recommend {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg1.webp');
+            }
+
+            .curryBs-bs-famousStore {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg1.webp');
+            }
+
+            .curryBs-bs-hot {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg1.webp');
+            }
+
+            .curryBs-bs-easy {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg1.webp');
+            }
+
+            .curryBs-bs-brandedBeef {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg1.webp');
+            }
+
+            .curryBs-bs-hearty {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg1.webp');
+            }
+
+            .curryBs-bs-local {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg1.webp');
+            }
+
+            .curryBs-bs-originality {
+                background-image: url('https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg1.webp');
+            }
+
+            .curryBs-bs-bar-end {
+                width: 100%;
+                height: 20px;
+                background-color: $brown;
+                position: relative;
+                z-index: 0;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .curryBs-epilogue {
+                padding: 150px 0;
+                position: relative;
+                z-index: 0;
+
+                .curryBs-epilogue-bg {
+                    width: 100%;
+                    height: 100%;
+                    @include absolute;
+                    transform: translateY(30px);
+                    z-index: -1;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 36px;
+                    text-align: center;
+    
+                    span {
+                        display: block;
+                        width: fit-content;
+                        margin: 0 auto;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 36px;
+                        transform: translateX(8px);
+                    }    
+                }
+
+                .curryBs-cta_btn {
+                    width: 87.5%;
+                    border-radius: 40px;
+                    background-color: $blue;
+                    box-shadow: 0 4px 4px $black-a3;
+                    margin: 32px auto 0 auto;
+
+                    &:active {
+                        box-shadow: 0 0 0 transparent;
+                        transform: translateY(4px);
+                    }
+
+                    a {
+                        padding: 21px 0;
+                        @include center;
+                        @include font-m;
+                        font-weight: 600;
+                        color: $white;
+
+                        .curryBs-cta_btn-icon {
+                            margin-left: 10px;
+                            transform: translateY(1px);
+
+                            div {
+                                width: 2px;
+                                height: 10px;
+                                background-color: $white;
+                            }
+
+                            div:nth-of-type(1) {
+                                transform: translateY(2px) rotate(-45deg);
+                            }
+
+                            div:nth-of-type(2) {
+                                transform: translateY(-2px) rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .curryBs_body-notSession {
+        animation: body 9s ease-in-out forwards;
+    }
+
+    @keyframes body {
+
+        0% {
+            overflow: hidden;
+        }
+
+        99% {
+            overflow: hidden;
+        }
+
+        100% {
+            overflow: initial;
+        }
+    }
+}
+
+// @import './responsive/style';
+
+// @import '../base';
+// @import './base';
+
+@media screen and (min-width: 768px) {
+
+    @import './responsive/base';
+
+    .curryBs-sp {
+        display: none;
+    }
+
+    .curryBs-pc {
+        display: block;
+    }
+    
+    html {
+
+        body {
+            overflow-x: hidden;
+
+            .curryBs-loading-notSession {
+
+                ul {
+                    margin-bottom: 100px;
+                }
+
+                p {
+                    @include font-m-pc;
+                    transform: translateY(50px);
+                }
+            }
+    
+            .curryBs-fv-notSession, .curryBs-fv-session {
+                height: 640px;
+    
+                .curryBs-fv-images {
+                    display: flex;
+                    justify-content: end;
+    
+                    .curryBs-fv-bookshelf {
+                        width: 52.5%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+    
+                    .curryBs-fv-curtain {
+                        width: 100%;
+                        display: flex;
+                        animation: curryBs-fv-curtain-pc 1s 5.7s ease-in-out forwards;
+
+                        img {
+                            width: 50%;
+                        }
+
+                        img:nth-of-type(1) {
+                            transform: translateX(1px);
+                        }
+                    }
+
+                    @keyframes curryBs-fv-curtain-pc {
+
+                        from {
+                            transform: translateX(0);
+                        }
+    
+                        to {
+                            transform: translateX(-47.5%);
+                        }
+                    }            
+
+                    .curryBs-fv-frame {
+                        height: 200px;
+                    }
+
+                    .curryBs-fv-spoon {
+                        width: 565px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-12.5%, -50px);
+                        animation: curryBs-fv-spoon1-pc 2s 7s ease-in-out forwards, curryBs-fv-spoon2-pc 2.6s 9s infinite;
+                    }
+
+                    @keyframes curryBs-fv-spoon1-pc {
+
+                        0% {
+                            opacity: 0;
+                        }
+        
+                        25% {
+                            opacity: 1;
+                        }
+    
+                        72% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        79% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        86% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        93% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        100% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                            opacity: 1;
+                        }
+                    } 
+                    
+                    @keyframes curryBs-fv-spoon2-pc {
+    
+                        0% {
+                            transform: translate(-12.5%, -50px) rotate(0)   
+                        }
+                        
+                        80% {
+                            transform: translate(-12.5%, -50px) rotate(0)
+                        }
+    
+                        85% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        90% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        95% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        100% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+                    }    
+
+                    .curryBs-fv-bg {
+                        height: 100px;
+                    }
+                }
+
+                h1 {
+
+                    img {
+                        width: 20vw;
+                        transform: translateY(0);
+                    }
+                }
+            }
+
+            .curryBs-fv-session {
+
+                .curryBs-fv-images {
+        
+                    .curryBs-fv-spoon-session {
+                        width: 565px;
+                        left: 50%;
+                        transform: translate(-12.5%, -50px);
+                    }
+    
+                    @keyframes curryBs-fv-spoon-session {
+    
+                        0% {
+                            transform: translate(-12.5%, -50px) rotate(0)   
+                        }
+                        
+                        80% {
+                            transform: translate(-12.5%, -50px) rotate(0)
+                        }
+    
+                        85% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        90% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+    
+                        95% {
+                            transform: translate(-12.5%, -50px) rotate(-7.5deg);
+                        }
+    
+                        100% {
+                            transform: translate(-12.5%, -50px) rotate(0);
+                        }
+                    }
+    
+                    .curryBs-fv-bg {
+                        animation: none;
+                        opacity: 1;
+                    }
+                }
+    
+                h1 {
+                    animation: none;
+                    opacity: 1;
+                }
+            }
+    
+
+            .curryBs_main {
+                padding-bottom: 80px;
+
+                .curryBs-prologue {
+                    padding-left: 10px;
+                    font-size: 20px;
+                    line-height: 48px;
+                }
+
+                .curryBs-categoryMenu {
+                    width: 80%;
+                    padding: 200px 75px 225px 75px;
+                    margin: 80px auto 0 auto;
+
+                    .curryBs-categoryMenu-bg {
+                        width: 100%;
+                        height: 100%;
+                        @include absolute;
+                        transform: translateY(30px);
+                        z-index: -1;
+                    }
+
+                    h2 {
+                        @include font-l-pc;
+                        transform: translateY(-8px);
+                    }
+
+                    ul {
+                        width: 100%;
+                        margin: 24px auto 0 auto;
+                        @include center;
+                        transform: translateY(-8px);
+    
+                        li {
+                            width: calc(25% - 12px);
+                            margin-top: 16px;
+    
+                            .curryBs_btn {
+                                @include font-m-pc;
+                            }
+                        }
+    
+                        li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4) {
+                            margin-top: 0;
+                        }
+    
+                        li:nth-of-type(2), li:nth-of-type(3), li:nth-of-type(4), li:nth-of-type(6), li:nth-of-type(7), li:nth-of-type(8) {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+
+                .curryBs-bs-recommend, .curryBs-bs-famousStore, .curryBs-bs-hot, .curryBs-bs-easy, .curryBs-bs-brandedBeef, .curryBs-bs-hearty, .curryBs-bs-local, .curryBs-bs-originality {
+                    overflow-x: hidden;
+                    background-size: initial;
+
+                    .curryBs-bs-title {
+                        width: 350px;
+                        height: fit-content;
+                        margin: 0 auto;
+
+                        .bs-title-bg {
+                            width: 100%;
+                            height: auto;
+                        }    
+
+                        span {
+                            transform: translateY(24px);
+                        }
+    
+                        .curryBs-bs-title-sub {
+                            @include font-s-pc;
+                        }
+    
+                        .curryBs-bs-title_h2 {
+                            @include font-l-pc;  
+                        }    
+                    }
+
+                    .curryBs-bs-translateX {
+                        overflow-x: hidden;
+                        padding-bottom: 40px;
+                        margin-top: 40px;
+                        display: flex;
+                        position: relative;
+
+                        .curryBs-bs-arrow_btn, .curryBs-bs-next_btn {
+                            width: 24px;
+                            height: 40px;
+                            position: absolute;
+                            top: 35%;
+                            z-index: 1;
+                            transition-duration: .3s;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: .5;
+                            }
+                        }
+
+                        .curryBs-bs-arrow_btn {
+                            left: 0;
+                            transform: translate(75px, 0);
+                        }
+
+                        .curryBs-bs-next_btn {
+                            right: 0;
+                            transform: translate(-75px, 0) rotate(180deg);
+                        }
+
+                        .curryBs-bs_btn-off {
+                            opacity: .5;
+                        }
+
+                        article {
+                            margin-top: 125px;
+                            transition-duration: 1s;
+
+                            .curryBs-bs-books, .curryBs-bs-text {
+                                width: 100vw;
+                                display: flex;
+                                justify-content: center;
+
+                                li {
+
+                                    a {
+                                    
+                                        img {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .curryBs-bs-books {
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: end;
+
+                                li {
+                                    width: 185px;
+
+                                    .curryBs-popUp {
+                                        width: 125%;
+
+                                        p {
+                                            font-size: 14px;
+                                            letter-spacing: 1.4px;
+                                            line-height: 20px;
+                                            left: 2.5px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .curryBs-bs-text {
+                                margin: 10px auto 0 auto;
+                                transform: translateY(-20px);
+
+                                li {
+                                    width: 171px;
+
+                                    a {
+
+                                        p {
+                                            @include font-m-pc;
+                                        }
+                                    }
+                                }
+
+                                li:nth-of-type(1) {
+                                    transform: translateX(-36px);
+                                }
+    
+                                li:nth-of-type(2) {
+                                    transform: translateX(-20px);
+                                }
+    
+                                li:nth-of-type(3) {
+                                    transform: translateX(-4px);
+                                }
+    
+                                li:nth-of-type(4) {
+                                    transform: translateX(10px);
+                                }
+    
+                                li:nth-of-type(5) {
+                                    transform: translateX(24px);
+                                }
+    
+                                li:nth-of-type(6) {
+                                    transform: translateX(36px);
+                                }
+                            }
+                        }
+
+                        .curryBs-bs-slide-right {
+                            transform: translateX(-100vw);
+                        }
+
+                        .curryBs-bs-bgBooks {
+                            width: 70vw;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .curryBs-bs-recommend, .curryBs-bs-famousStore {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(-10px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-15px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-35px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-hot {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(2.5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-2.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-22.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-easy {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(10px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-15px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-brandedBeef {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(2.5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-2.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-22.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-hearty {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(-20px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-25px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-42.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-local {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(5px);
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(0);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-20px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-bs-originality {
+
+                    .curryBs-bs-translateX {
+
+                        article:nth-of-type(2) {
+
+                            .curryBs-bs-books {
+                                transform: translateY(-2.5px);
+
+                                li:nth-of-type(3) {
+                                    transform: translateY(10px);
+
+                                    &:hover {
+                                        transform: translateY(2.5px);
+                                    }
+                                }
+                            }
+
+                            .curryBs-bs-bar-translateY {
+                                transform: translateY(-7.5px);
+                            }
+
+                            .curryBs-bs-text {
+                                transform: translateY(-27.5px);
+                            }
+                        }
+                    }
+                }
+
+                .curryBs-epilogue {
+                    width: 80%;
+                    padding: 175px 75px;
+                    margin: 80px auto 0 auto;
+
+                    p {
+                        padding-left: 10px;
+                        font-size: 20px;
+                        line-height: 48px;
+                        position: relative;
+                        top: -16px;
+                    }
+
+                    .curryBs-cta_btn {
+                        width: 540px;
+                        position: relative;
+                        top: -16px;
+
+                        a {
+                            @include font-m-pc;
+
+                            .curryBs-cta_btn-icon {
+                                transform: translateY(1.5px);
+    
+                                div {
+                                    height: 12px;
+                                }
+    
+                                div:nth-of-type(1) {
+                                    transform: translateY(2.5px) rotate(-45deg);
+                                }
+    
+                                div:nth-of-type(2) {
+                                    transform: translateY(-2.5px) rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }    
+}

@@ -1,0 +1,79 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import './reset';
+
+$black: #333333;
+$black-a1: rgba(51, 51, 51, .75);
+$black-a2: rgba(51, 51, 51, .5);
+$black-a3: rgba(51, 51, 51, .25);
+$white: #FFFFFF;
+$white-a1: rgba(255, 255, 255, .75);
+$white-a2: rgba(255, 255, 255, .5);
+$white-a3: rgba(255, 255, 255, .25);
+$grey: #E6E6E6;
+$yellow: #F2B102;
+$brown: #855900;
+$whitesmoke: #EFEDEA;
+$blue: #2478B5;
+$color-curry: #6D340A;
+
+* {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    line-height: 23.1px;
+}
+
+html, body {
+    width: 100vw;
+}
+
+.curryBs-fv, main, section {
+    width: 100%;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+@mixin bg {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin font-s {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@mixin font-m {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@mixin font-l {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    
+}

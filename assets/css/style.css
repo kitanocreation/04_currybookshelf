@@ -1,0 +1,1478 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+/* --- reset --- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p, div {
+  word-break: break-all;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type=text], select {
+  border-radius: 3px;
+  border: none;
+  padding: 6px;
+  font-size: inheirt;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #B5B5B5;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.clearfix {
+  display: block;
+}
+
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bx-wrapper {
+  box-shadow: none !important;
+}
+
+.bx-controls-direction a {
+  z-index: 0 !important;
+}
+
+* {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 23.1px;
+}
+
+html, body {
+  width: 100vw;
+}
+
+.curryBs-fv, main, section {
+  width: 100%;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.curryBs-pc {
+  display: none;
+}
+
+html body .curryBs-loading {
+  display: none;
+}
+html body .curryBs-loading-notSession {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EFEDEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 10000;
+  animation: curryBs-loading 5.7s ease-in-out forwards;
+}
+html body .curryBs-loading-notSession ul {
+  width: 245px;
+  margin-bottom: 75px;
+  position: absolute;
+}
+html body .curryBs-loading-notSession ul:nth-of-type(1) li {
+  width: 47.5px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+}
+html body .curryBs-loading-notSession ul:nth-of-type(1) li img {
+  width: 100%;
+  height: 100%;
+}
+html body .curryBs-loading-notSession ul:nth-of-type(1) li:nth-of-type(1) {
+  left: 0;
+  transform: translateX(20%);
+  animation: curryBs-loading-book1 0.5s 1s ease-in-out forwards;
+}
+@keyframes curryBs-loading-book1 {
+  0% {
+    height: 70px;
+    transform: translateX(20%);
+  }
+  30% {
+    transform: translate(20%, 20px);
+    height: 70px;
+  }
+  100% {
+    height: 0;
+    transform: translate(20%, -50px);
+  }
+}
+html body .curryBs-loading-notSession ul:nth-of-type(1) li:nth-of-type(2) {
+  left: 50%;
+  transform: translateX(-50%);
+  animation: curryBs-loading-book2 0.5s 1.9s ease-in-out forwards;
+}
+@keyframes curryBs-loading-book2 {
+  0% {
+    height: 70px;
+    transform: translateX(-50%);
+  }
+  30% {
+    height: 70px;
+    transform: translate(-50%, 20px);
+  }
+  100% {
+    height: 0;
+    transform: translate(-50%, -50px);
+  }
+}
+html body .curryBs-loading-notSession ul:nth-of-type(1) li:nth-of-type(3) {
+  right: 0;
+  transform: translateX(-20%);
+  animation: curryBs-loading-book3 0.5s 2.8s ease-in-out forwards;
+}
+@keyframes curryBs-loading-book3 {
+  0% {
+    transform: translateX(-20%);
+    height: 70px;
+  }
+  30% {
+    transform: translate(-20%, 20px);
+    height: 70px;
+  }
+  100% {
+    height: 0;
+    transform: translate(-20%, -50px);
+  }
+}
+html body .curryBs-loading-notSession ul:nth-of-type(2) li {
+  width: 65px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50px);
+}
+html body .curryBs-loading-notSession ul:nth-of-type(2) li img {
+  width: 100%;
+  height: 100%;
+}
+html body .curryBs-loading-notSession ul:nth-of-type(2) li:nth-of-type(1) {
+  left: 0;
+  animation: curryBs-loading-curry1 0.4s 1.5s ease-in-out forwards;
+}
+@keyframes curryBs-loading-curry1 {
+  0% {
+    height: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    width: 70px;
+    height: 47.5px;
+    transform: translateY(0);
+  }
+}
+html body .curryBs-loading-notSession ul:nth-of-type(2) li:nth-of-type(2) {
+  left: 50%;
+  animation: curryBs-loading-curry2 0.4s 2.4s ease-in-out forwards;
+}
+@keyframes curryBs-loading-curry2 {
+  0% {
+    height: 0;
+    transform: translate(-50%, -50px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+    width: 70px;
+    height: 47.5px;
+  }
+}
+html body .curryBs-loading-notSession ul:nth-of-type(2) li:nth-of-type(3) {
+  right: 0;
+  animation: curryBs-loading-curry3 0.4s 3.3s ease-in-out forwards;
+}
+@keyframes curryBs-loading-curry3 {
+  0% {
+    height: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    width: 70px;
+    height: 47.5px;
+    transform: translateY(0);
+  }
+}
+html body .curryBs-loading-notSession p {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #F2B102;
+  transform: translateY(75px);
+}
+@keyframes curryBs-loading {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+    z-index: 10000;
+  }
+  99% {
+    z-index: 10000;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10000;
+  }
+}
+html body .curryBs-fv {
+  display: none;
+}
+html body .curryBs-fv-notSession, html body .curryBs-fv-session {
+  height: 525px;
+  background-color: #6D340A;
+  position: relative;
+}
+html body .curryBs-fv-notSession .curryBs-fv-images, html body .curryBs-fv-session .curryBs-fv-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-bookshelf, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bookshelf {
+  z-index: 1;
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-curtain, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: curryBs-fv-curtain 1s 5.7s ease-in-out forwards;
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-curtain img, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain img {
+  height: 100%;
+}
+@keyframes curryBs-fv-curtain {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-47.5%);
+  }
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-frame, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-frame {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 3;
+  animation: curryBs-fv-frame 0.5s 7s ease-in-out forwards;
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-frame img, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-frame img {
+  height: 100%;
+}
+@keyframes curryBs-fv-frame {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-spoon, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-spoon {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-30%);
+  opacity: 0;
+  z-index: 3;
+  animation: curryBs-fv-spoon1 2s 7s ease-in-out forwards, curryBs-fv-spoon2 2.6s 9s infinite;
+}
+@keyframes curryBs-fv-spoon1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  72% {
+    transform: translateY(-30%) rotate(0);
+  }
+  79% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  86% {
+    transform: translateY(-30%) rotate(0);
+  }
+  93% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  100% {
+    transform: translateY(-30%) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes curryBs-fv-spoon2 {
+  0% {
+    transform: translateY(-30%) rotate(0);
+  }
+  80% {
+    transform: translateY(-30%) rotate(0);
+  }
+  85% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  90% {
+    transform: translateY(-30%) rotate(0);
+  }
+  95% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  100% {
+    transform: translateY(-30%) rotate(0);
+  }
+}
+html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-bg, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bg {
+  width: 100%;
+  height: 75px;
+  background-color: #F2B102;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(25px);
+  opacity: 0;
+  z-index: 2;
+  animation: curryBs-fv-bg 0.5s 7s ease-in-out forwards;
+}
+@keyframes curryBs-fv-bg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html body .curryBs-fv-notSession h1, html body .curryBs-fv-session h1 {
+  width: 52.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  animation: h1 0.8s 7.4s ease-in-out forwards;
+}
+html body .curryBs-fv-notSession h1 img, html body .curryBs-fv-session h1 img {
+  width: 35vw;
+  transform: translateY(-45%);
+}
+@keyframes h1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html body .curryBs-fv-notSession {
+  display: block;
+}
+html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain {
+  animation: none;
+  transform: translateX(-47.5%);
+}
+html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-frame {
+  animation: none;
+  opacity: 1;
+}
+html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-spoon-session {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-30%);
+  z-index: 3;
+  animation: curryBs-fv-spoon-session 2.6s 2s infinite;
+}
+@keyframes curryBs-fv-spoon-session {
+  0% {
+    transform: translateY(-30%) rotate(0);
+  }
+  80% {
+    transform: translateY(-30%) rotate(0);
+  }
+  85% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  90% {
+    transform: translateY(-30%) rotate(0);
+  }
+  95% {
+    transform: translateY(-30%) rotate(-7.5deg);
+  }
+  100% {
+    transform: translateY(-30%) rotate(0);
+  }
+}
+html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bg {
+  animation: none;
+  opacity: 1;
+}
+html body .curryBs-fv-session h1 {
+  animation: none;
+  opacity: 1;
+}
+html body .curryBs_main {
+  padding-top: 80px;
+  background-color: #F2B102;
+}
+html body .curryBs_main .curryBs-prologue {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+html body .curryBs_main .curryBs-prologue span {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  transform: translateX(8px);
+}
+html body .curryBs_main .curryBs-categoryMenu {
+  width: 100%;
+  padding: 100px 0;
+  margin-top: 80px;
+  position: relative;
+  z-index: 0;
+}
+html body .curryBs_main .curryBs-categoryMenu .curryBs-categoryMenu-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-categoryMenu h2 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+html body .curryBs_main .curryBs-categoryMenu ul {
+  width: calc(100% - 60px);
+  margin: 24px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li {
+  width: calc(50% - 6px);
+  margin-top: 12px;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn {
+  width: 100%;
+  border-radius: 20px;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+  position: relative;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn:active {
+  opacity: 0.8;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn img {
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(1), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(2) {
+  margin-top: 0;
+}
+html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(2), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(4), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(6), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(8) {
+  margin-left: 12px;
+}
+html body .curryBs_main .curryBs-bs-recommend, html body .curryBs_main .curryBs-bs-famousStore, html body .curryBs_main .curryBs-bs-hot, html body .curryBs_main .curryBs-bs-easy, html body .curryBs_main .curryBs-bs-brandedBeef, html body .curryBs_main .curryBs-bs-hearty, html body .curryBs_main .curryBs-bs-local, html body .curryBs_main .curryBs-bs-originality {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-local .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-bar {
+  width: 100%;
+  height: 20px;
+  position: relative;
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-bar img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-bar img {
+  height: 100%;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title {
+  height: 27vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .bs-title-bg {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -10px);
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title span {
+  transform: translateY(-5px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .curryBs-bs-title-sub {
+  display: block;
+  margin-bottom: 7.5px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .curryBs-bs-title_h2 {
+  display: block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article {
+  width: fit-content;
+  margin-top: 100px;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text {
+  margin-left: 24px;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li {
+  display: inline-block;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li a, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a {
+  display: block;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a img {
+  width: 104%;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books {
+  transform: translateY(5px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li {
+  width: 125px;
+  position: relative;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp {
+  width: 150%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 14px;
+  line-height: 20.3px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  opacity: 0;
+  z-index: 1;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: curryBs-popUp 3.5s infinite;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p {
+  width: 75%;
+  padding-top: 15px;
+  white-space: initial;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 17.5px;
+  position: relative;
+  bottom: 17.5px;
+  left: 5px;
+  animation: curryBs-popUp 3.5s infinite;
+}
+@keyframes curryBs-popUp {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-5px);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  40% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-5px);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp1 {
+  animation: curryBs-popUp1 14s infinite;
+}
+@keyframes curryBs-popUp1 {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp2 {
+  animation: curryBs-popUp2 14s infinite;
+}
+@keyframes curryBs-popUp2 {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  38% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp3 {
+  animation: curryBs-popUp3 14s infinite;
+}
+@keyframes curryBs-popUp3 {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  71% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-bar, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-bar {
+  width: calc(100% + 24px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text {
+  display: flex;
+  transform: translateY(-10px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li {
+  width: 122px;
+  height: fit-content;
+  background-color: #EFEDEA;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a {
+  padding: 4px 0;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a h3, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a h3 {
+  white-space: initial;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  line-height: 23.1px;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a p {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 26.4px;
+  text-align: center;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a p span, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a p span {
+  margin: 2px;
+  font-size: 14px;
+  line-height: 14px;
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1) {
+  transform: translateX(4px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2) {
+  transform: translateX(12px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3) {
+  transform: translateX(20px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4) {
+  transform: translateX(28px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5) {
+  transform: translateX(36px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6) {
+  transform: translateX(44px);
+}
+html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) {
+  margin-bottom: 60px;
+}
+html body .curryBs_main .curryBs-bs-recommend {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/recommend-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-famousStore {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/famousStore-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-hot {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hot-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-easy {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/easy-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-brandedBeef {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/brandedBeef-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-hearty {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/hearty-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-local {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/local-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-originality {
+  background-image: url("https://gigaplus.makeshop.jp/kitanoace/06_curry-bookshelf/assets/img/originality-bg1.webp");
+}
+html body .curryBs_main .curryBs-bs-bar-end {
+  width: 100%;
+  height: 20px;
+  background-color: #855900;
+  position: relative;
+  z-index: 0;
+}
+html body .curryBs_main .curryBs-bs-bar-end img {
+  height: 100%;
+}
+html body .curryBs_main .curryBs-epilogue {
+  padding: 150px 0;
+  position: relative;
+  z-index: 0;
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-epilogue-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(30px);
+  z-index: -1;
+}
+html body .curryBs_main .curryBs-epilogue p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+html body .curryBs_main .curryBs-epilogue p span {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  transform: translateX(8px);
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn {
+  width: 87.5%;
+  border-radius: 40px;
+  background-color: #2478B5;
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.25);
+  margin: 32px auto 0 auto;
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn:active {
+  box-shadow: 0 0 0 transparent;
+  transform: translateY(4px);
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a {
+  padding: 21px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon {
+  margin-left: 10px;
+  transform: translateY(1px);
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div {
+  width: 2px;
+  height: 10px;
+  background-color: #FFFFFF;
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div:nth-of-type(1) {
+  transform: translateY(2px) rotate(-45deg);
+}
+html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div:nth-of-type(2) {
+  transform: translateY(-2px) rotate(45deg);
+}
+html .curryBs_body-notSession {
+  animation: body 9s ease-in-out forwards;
+}
+@keyframes body {
+  0% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+  /* --- reset --- */
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  p, div {
+    word-break: break-all;
+  }
+  a {
+    text-decoration: none;
+  }
+  input[type=text], select {
+    border-radius: 3px;
+    border: none;
+    padding: 6px;
+    font-size: inheirt;
+    box-sizing: border-box;
+  }
+  input::placeholder {
+    color: #B5B5B5;
+    font-size: 12px;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+  .clearfix {
+    display: block;
+  }
+  .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .bx-wrapper {
+    box-shadow: none !important;
+  }
+  .bx-controls-direction a {
+    z-index: 0 !important;
+  }
+  * {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    line-height: 23.1px;
+  }
+  html, body {
+    width: 100vw;
+  }
+  .curryBs-fv, main, section {
+    width: 100%;
+  }
+  a {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .curryBs-sp {
+    display: none;
+  }
+  .curryBs-pc {
+    display: block;
+  }
+  .curryBs_btn, .curryBs-bs-books li {
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .curryBs_btn:hover, .curryBs-bs-books li:hover {
+    transform: translateY(-8px);
+  }
+  .curryBs-sp {
+    display: none;
+  }
+  .curryBs-pc {
+    display: block;
+  }
+  html body {
+    overflow-x: hidden;
+  }
+  html body .curryBs-loading-notSession ul {
+    margin-bottom: 100px;
+  }
+  html body .curryBs-loading-notSession p {
+    font-size: 20px;
+    line-height: 20px;
+    transform: translateY(50px);
+  }
+  html body .curryBs-fv-notSession, html body .curryBs-fv-session {
+    height: 640px;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images, html body .curryBs-fv-session .curryBs-fv-images {
+    display: flex;
+    justify-content: end;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-bookshelf, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bookshelf {
+    width: 52.5%;
+    height: 100%;
+    object-fit: cover;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-curtain, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain {
+    width: 100%;
+    display: flex;
+    animation: curryBs-fv-curtain-pc 1s 5.7s ease-in-out forwards;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-curtain img, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain img {
+    width: 50%;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-curtain img:nth-of-type(1), html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-curtain img:nth-of-type(1) {
+    transform: translateX(1px);
+  }
+  @keyframes curryBs-fv-curtain-pc {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-47.5%);
+    }
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-frame, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-frame {
+    height: 200px;
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-spoon, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-spoon {
+    width: 565px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-12.5%, -50px);
+    animation: curryBs-fv-spoon1-pc 2s 7s ease-in-out forwards, curryBs-fv-spoon2-pc 2.6s 9s infinite;
+  }
+  @keyframes curryBs-fv-spoon1-pc {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    72% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    79% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    86% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    93% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    100% {
+      transform: translate(-12.5%, -50px) rotate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes curryBs-fv-spoon2-pc {
+    0% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    80% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    85% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    90% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    95% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    100% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+  }
+  html body .curryBs-fv-notSession .curryBs-fv-images .curryBs-fv-bg, html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bg {
+    height: 100px;
+  }
+  html body .curryBs-fv-notSession h1 img, html body .curryBs-fv-session h1 img {
+    width: 20vw;
+    transform: translateY(0);
+  }
+  html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-spoon-session {
+    width: 565px;
+    left: 50%;
+    transform: translate(-12.5%, -50px);
+  }
+  @keyframes curryBs-fv-spoon-session {
+    0% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    80% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    85% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    90% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+    95% {
+      transform: translate(-12.5%, -50px) rotate(-7.5deg);
+    }
+    100% {
+      transform: translate(-12.5%, -50px) rotate(0);
+    }
+  }
+  html body .curryBs-fv-session .curryBs-fv-images .curryBs-fv-bg {
+    animation: none;
+    opacity: 1;
+  }
+  html body .curryBs-fv-session h1 {
+    animation: none;
+    opacity: 1;
+  }
+  html body .curryBs_main {
+    padding-bottom: 80px;
+  }
+  html body .curryBs_main .curryBs-prologue {
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 48px;
+  }
+  html body .curryBs_main .curryBs-categoryMenu {
+    width: 80%;
+    padding: 200px 75px 225px 75px;
+    margin: 80px auto 0 auto;
+  }
+  html body .curryBs_main .curryBs-categoryMenu .curryBs-categoryMenu-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(30px);
+    z-index: -1;
+  }
+  html body .curryBs_main .curryBs-categoryMenu h2 {
+    font-size: 32px;
+    line-height: 32px;
+    transform: translateY(-8px);
+  }
+  html body .curryBs_main .curryBs-categoryMenu ul {
+    width: 100%;
+    margin: 24px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-8px);
+  }
+  html body .curryBs_main .curryBs-categoryMenu ul li {
+    width: calc(25% - 12px);
+    margin-top: 16px;
+  }
+  html body .curryBs_main .curryBs-categoryMenu ul li .curryBs_btn {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(1), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(2), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(3), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(4) {
+    margin-top: 0;
+  }
+  html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(2), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(3), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(4), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(6), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(7), html body .curryBs_main .curryBs-categoryMenu ul li:nth-of-type(8) {
+    margin-left: 16px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend, html body .curryBs_main .curryBs-bs-famousStore, html body .curryBs_main .curryBs-bs-hot, html body .curryBs_main .curryBs-bs-easy, html body .curryBs_main .curryBs-bs-brandedBeef, html body .curryBs_main .curryBs-bs-hearty, html body .curryBs_main .curryBs-bs-local, html body .curryBs_main .curryBs-bs-originality {
+    overflow-x: hidden;
+    background-size: initial;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title {
+    width: 350px;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .bs-title-bg, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .bs-title-bg {
+    width: 100%;
+    height: auto;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title span, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title span {
+    transform: translateY(24px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .curryBs-bs-title-sub, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .curryBs-bs-title-sub {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-local .curryBs-bs-title .curryBs-bs-title_h2, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-title .curryBs-bs-title_h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX {
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    display: flex;
+    position: relative;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-next_btn {
+    width: 24px;
+    height: 40px;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    transition-duration: 0.3s;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-next_btn:hover, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-arrow_btn:hover, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-next_btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-arrow_btn, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-arrow_btn {
+    left: 0;
+    transform: translate(75px, 0);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-next_btn, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-next_btn {
+    right: 0;
+    transform: translate(-75px, 0) rotate(180deg);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs_btn-off, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs_btn-off {
+    opacity: 0.5;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article {
+    margin-top: 125px;
+    transition-duration: 1s;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li a img, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a img {
+    width: 100%;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books {
+    margin: 0 auto;
+    display: flex;
+    align-items: end;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li {
+    width: 185px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp {
+    width: 125%;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-books li .curryBs-popUp p {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    line-height: 20px;
+    left: 2.5px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text {
+    margin: 10px auto 0 auto;
+    transform: translateY(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li {
+    width: 171px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li a p, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li a p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(1) {
+    transform: translateX(-36px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(2) {
+    transform: translateX(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(3) {
+    transform: translateX(-4px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(4) {
+    transform: translateX(10px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(5) {
+    transform: translateX(24px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6), html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article .curryBs-bs-text li:nth-of-type(6) {
+    transform: translateX(36px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-slide-right, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-slide-right {
+    transform: translateX(-100vw);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX .curryBs-bs-bgBooks, html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX .curryBs-bs-bgBooks {
+    width: 70vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-10px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-15px);
+  }
+  html body .curryBs_main .curryBs-bs-recommend .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text, html body .curryBs_main .curryBs-bs-famousStore .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-35px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hot .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-22.5px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(10px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(5px);
+  }
+  html body .curryBs_main .curryBs-bs-easy .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-15px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-brandedBeef .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-22.5px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-25px);
+  }
+  html body .curryBs_main .curryBs-bs-hearty .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-42.5px);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(5px);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(0);
+  }
+  html body .curryBs_main .curryBs-bs-local .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-20px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books {
+    transform: translateY(-2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books li:nth-of-type(3) {
+    transform: translateY(10px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-books li:nth-of-type(3):hover {
+    transform: translateY(2.5px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-bar-translateY {
+    transform: translateY(-7.5px);
+  }
+  html body .curryBs_main .curryBs-bs-originality .curryBs-bs-translateX article:nth-of-type(2) .curryBs-bs-text {
+    transform: translateY(-27.5px);
+  }
+  html body .curryBs_main .curryBs-epilogue {
+    width: 80%;
+    padding: 175px 75px;
+    margin: 80px auto 0 auto;
+  }
+  html body .curryBs_main .curryBs-epilogue p {
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 48px;
+    position: relative;
+    top: -16px;
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn {
+    width: 540px;
+    position: relative;
+    top: -16px;
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon {
+    transform: translateY(1.5px);
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div {
+    height: 12px;
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div:nth-of-type(1) {
+    transform: translateY(2.5px) rotate(-45deg);
+  }
+  html body .curryBs_main .curryBs-epilogue .curryBs-cta_btn a .curryBs-cta_btn-icon div:nth-of-type(2) {
+    transform: translateY(-2.5px) rotate(45deg);
+  }
+}
